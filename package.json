@@ -1,0 +1,27 @@
+{
+  "name": "ProyectoTiendaCoches",
+  "version": "1.0.0",
+  "description": "Proyecto de Inicio de compra-venta de coches",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/refineriaf12/ProyectoTiendaCoches.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/refineriaf12/ProyectoTiendaCoches/issues"
+  },
+  "homepage": "https://github.com/refineriaf12/ProyectoTiendaCoches#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mongoose": "^5.11.13",
+    "morgan": "^1.10.0"
+  }
+}
