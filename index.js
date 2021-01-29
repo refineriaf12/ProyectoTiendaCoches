@@ -16,9 +16,9 @@ app.engine(
     })
   );
 
-  app.use(express.static("public"));
+app.use(express.static("public"));
 
-  app.listen(port, () => console.log(`Leyendo el puerto ${port}`));
+app.listen(port, () => console.log(`Leyendo el puerto ${port}`));
 
 
 
