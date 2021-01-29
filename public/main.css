@@ -5,6 +5,7 @@
 :root{
     --grey: #8c8c8c;
     --light-grey: #bfbfbf;
+    --light-grey-background:rgba(191, 191, 191, 0.7);
     --black: #0d0d0d;
     --blue: #4983ad;
     --yellow: #dbc34d;
