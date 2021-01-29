@@ -49,7 +49,8 @@ const carSchema = new Schema({
         required:true
     },
     stock: Number,
-    availability: String
+    availability: String,
+    transactionType: String
 });
 
 
