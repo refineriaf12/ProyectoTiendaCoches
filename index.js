@@ -16,19 +16,19 @@
       })
     );
   
-    app.set('view engine', 'hbs');
+  app.set('view engine', 'hbs');
   
-    app.get("/", (req, res) => {
-      res.render("templates/home", {layout: "main"});
-    });
+  app.get("/", (req, res) => {
+    res.render("templates/home", {layout: "main"});
+  });
   
   
-    app.use(express.static("public"));
-    app.use(express.urlencoded({extended:false}));
-    app.use(express.json());
+  app.use(express.static("public"));
+  app.use(express.urlencoded({extended:false}));
+  app.use(express.json());
     
   
   
-    app.listen(port, () => console.log(`Leyendo el puerto ${port}`));
+  app.listen(port, () => console.log(`Leyendo el puerto ${port}`));
 
 
