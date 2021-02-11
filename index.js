@@ -4,6 +4,7 @@
   const handlebars = require('express-handlebars');
   const morgan = require('morgan')
   const port = 8000;
+
   
   require('./database');
   
@@ -18,16 +19,19 @@
   
   app.set('view engine', 'hbs');
   
-  app.get("/", (req, res) => {
-    res.render("templates/home", {layout: "main"});
-  });
-  
+
+
   
   app.use(express.static("public"));
   app.use(express.urlencoded({extended:false}));
   app.use(express.json());
-    
+  app.use(require("./routes/index"))
   
+
+
+
+
+
   
   app.listen(port, () => console.log(`Leyendo el puerto ${port}`));
 

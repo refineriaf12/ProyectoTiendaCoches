@@ -10,3 +10,4 @@ mongoose.connect(MONGODB_URI,{
 })
 .then((db)=> console.log("Conectado"))
 .catch((err)=> console.error(err));
+

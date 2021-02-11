@@ -33,6 +33,7 @@ const userSchema = new Schema({
     leasedCars:{
         type:[Schema.Types.ObjectId]
     },
+    administrator: Boolean
 });
 
 module.exports = model('User', userSchema, 'users');
