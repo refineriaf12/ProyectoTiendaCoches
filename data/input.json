@@ -5,16 +5,16 @@
             "type":"text",
             "placeholder":"usuario",
             "modifier":"-borderBloodOrange",
-            "id":"username",
-            "name":"username",
+            "id":"usernameLogin",
+            "name":"usernameLogin",
             "required":true
         },
         {
             "type":"password",
             "placeholder":"contraseña",
             "modifier":"-borderBloodOrange",
-            "id":"password",
-            "name":"password",
+            "id":"passwordLogin",
+            "name":"passwordLogin",
             "required":true
         },
         {
@@ -29,8 +29,8 @@
             "type":"text",
             "placeholder":"Nombre",
             "modifier":"-borderBloodOrange",
-            "id":"name",
-            "name":"name",
+            "id":"nameRegister",
+            "name":"nameRegister",
             "value":"",
             "required":true
         },
@@ -38,8 +38,8 @@
             "type":"text",
             "placeholder":"Apellido",
             "modifier":"-borderBloodOrange",
-            "id":"surname",
-            "name":"surname",
+            "id":"surnameRegister",
+            "name":"surnameRegister",
             "value":"",
             "required":true
         },
@@ -47,8 +47,8 @@
             "type":"text",
             "placeholder":"numero de DNI",
             "modifier":"-borderBloodOrange",
-            "id":"dni",
-            "name":"dni",
+            "id":"dniRegister",
+            "name":"dniRegister",
             "value":"",
             "required":true
         },
@@ -56,8 +56,8 @@
             "type":"text",
             "placeholder":"Usuario",
             "modifier":"-borderBloodOrange",
-            "id":"username",
-            "name":"username",
+            "id":"usernameRegister",
+            "name":"usernameRegister",
             "value":"",
             "required":true
         },
@@ -65,8 +65,8 @@
             "type":"password",
             "placeholder":"Contraseña",
             "modifier":"-borderBloodOrange",
-            "id":"password",
-            "name":"password",
+            "id":"passwordRegister",
+            "name":"passwordRegister",
             "value":"",
             "required":true
         },
@@ -74,8 +74,8 @@
             "type":"email",
             "placeholder":"Email",
             "modifier":"-borderBloodOrange",
-            "id":"email",
-            "name":"email",
+            "id":"emailRegister",
+            "name":"emailRegister",
             "value":"",
             "required":true
         },
@@ -83,10 +83,10 @@
             "type":"url",
             "placeholder":"Avatar",
             "modifier":"-borderBloodOrange",
-            "id":"avatar",
-            "name":"avatar",
+            "id":"avatarRegister",
+            "name":"avatarRegister",
             "value":"",
-            "required":true
+            "required":false
         },
         {
             "type":"submit",
