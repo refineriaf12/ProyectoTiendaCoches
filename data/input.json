@@ -3,15 +3,15 @@
     "formLogin":[
         {
             "type":"text",
-            "placeholder":"usuario",
+            "placeholder":"Usuario",
             "modifier":"-borderBloodOrange",
-            "id":"username",
-            "name":"username",
+            "id":"usernameLogin",
+            "name":"usernameLogin",
             "required":true
         },
         {
             "type":"password",
-            "placeholder":"contraseña",
+            "placeholder":"Contraseña",
             "modifier":"-borderBloodOrange",
             "id":"password",
             "name":"password",
@@ -76,7 +76,7 @@
             "modifier":"-borderBloodOrange",
             "id":"email",
             "name":"email",
-            "value":"",
+            "value":"{{value}}",
             "required":true
         },
         {

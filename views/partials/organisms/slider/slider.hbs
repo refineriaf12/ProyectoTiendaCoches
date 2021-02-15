@@ -1,8 +1,14 @@
-<ul class="O-slider">
-    {{>molecules/slider/slider_button_prev}}
-    {{!-- {{#each sliderItem}}   --}}
-      {{>molecules/slider/slider_list_item}}
-    {{!-- {{/each}}  --}}
-    {{>molecules/slider/slider_button_next}}
+{{>molecules/slider/slider_button_prev}}
+
+<ul class="O-slider__slides -is-set">
+
+  {{!-- {{#each sliderItem}}   --}}
+    {{>molecules/slider/slider_list_item}}
+    {{>molecules/slider/slider_list_item}}
+    {{>molecules/slider/slider_list_item}}
+    {{>molecules/slider/slider_list_item}}
+    {{>molecules/slider/slider_list_item}}
+  {{!-- {{/each}}  --}}
 
 </ul>
+{{>molecules/slider/slider_button_next}}

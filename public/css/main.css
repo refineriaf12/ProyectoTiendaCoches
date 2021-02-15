@@ -3,6 +3,7 @@
 
 *{
     font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
 }
 :root{
     --grey: #8c8c8c;
@@ -11,18 +12,24 @@
     --blue: #4983ad;
     --yellow: #dbc34d;
     --orange: #db9050;
-    --blod-orange: #c2654e;
+    --blood-orange: #c2654e;
     --red: #b84848;
+    --shadow:0px 3px 4px -2px #0d0d0d;
+
     --extra-light: 200;
     --regular: 400;
     --semibold: 600;
     --extra-bold: 800;
 }
 
--backgroundColorOrange{
-    background-color: var(--orange);
+.-backgroundColorBloodOrange{
+    background-color: var(--blood-orange);
+    color:white;
 }
 
+.-shadow{
+  box-shadow: var(--shadow);
+}
 
 
 
