@@ -1,0 +1,15 @@
+<h1> Registro de ventas </h1>
+
+{{#each transactionListArray}}
+    <a href="/transactionDetail/{{this._id}}">
+        <section>
+            <h2>Venta: {{this._id}}</h2>
+            <p>Fecha de venta: {{this.transactionDate}}</p>
+
+        </section>
+    </a>
+{{/each}}
+
+{{>atoms/buttons/benefit}}
+
+{{>atoms/buttons/homeButton}}

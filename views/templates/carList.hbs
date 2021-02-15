@@ -1,0 +1,21 @@
+<h1> Venta Coches Nuevos </h1>
+
+
+
+{{#each carListArray}}
+    <a href="/carDetail/{{this._id}}">
+        <section>
+           
+                {{>atoms/thumbnailsCar/thumbnailList}}
+                {{>atoms/details/brand}}
+                {{>atoms/details/model}}
+                {{>atoms/details/transmission}}
+                {{>atoms/details/combustible}}
+                {{>atoms/details/price}}
+
+        </section>
+    </a>
+{{/each}}
+
+
+

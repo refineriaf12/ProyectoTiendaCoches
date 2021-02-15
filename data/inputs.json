@@ -1,0 +1,155 @@
+{
+  "updateForm": [
+    {
+      "labelFor": "carBrand",
+      "labelContent": "Modelo",
+      "inputName": "carBrand",
+      "type": "text",
+      "value": "{{singleCar.carBrand}}"
+    },
+
+    {
+      "labelFor": "carModel",
+      "labelContent": "Modelo",
+      "inputName": "carModel",
+      "type": "text",
+      "value": "{{singleCar.carModel}}"
+    },
+
+    {
+      "labelFor": "modelYear",
+      "labelContent": "Año",
+      "inputName": "modelYear",
+      "type": "text",
+      "value": "{{singleCar.modelYear}}"
+    },
+
+    {
+      "labelFor": "nextItvDate",
+      "labelContent": "Próxima Itv",
+      "inputName": "nextItvDate",
+      "type": "date",
+      "value": "{{singleCar.nextItvDate}}"
+    },
+
+    {
+      "labelFor": "sellingPrice",
+      "labelContent": "Precio de venta",
+      "inputName": "sellingPrice",
+      "type": "number",
+      "value": "{{singleCar.sellingPrice}}"
+    },
+
+    {
+      "labelFor": "costPrice",
+      "labelContent": "Precio de coste",
+      "inputName": "costPrice",
+      "type": "number",
+      "value": "{{singleCar.costPrice}}"
+    },
+
+    {
+      "labelFor": "carImage",
+      "labelContent": "Foto",
+      "inputName": "carImage",
+      "type": "text",
+      "value": "{{singleCar.carImage}}"
+    },
+
+    {
+      "labelFor": "carColor",
+      "labelContent": "Color",
+      "inputName": "carColor",
+      "type": "text",
+      "value": "{{singleCar.carColor}}"
+    },
+
+    {
+      "labelFor": "seatsNumber",
+      "labelContent": "Número de asientos",
+      "inputName": "seatsNumber",
+      "type": "number",
+      "value": "{{singleCar.seatsNumber}}"
+    },
+
+    {
+      "labelFor": "doorNumber",
+      "labelContent": "Número de puertas",
+      "inputName": "doorNumber",
+      "type": "number",
+      "value": "{{singleCar.doorNumber}}"
+    },
+
+    {
+      "labelFor": "trunkSize",
+      "labelContent": "Maletero",
+      "inputName": "trunkSize",
+      "type": "number",
+      "value": "{{singleCar.trunkSize}}"
+    },
+
+    {
+      "labelFor": "co2Emissions",
+      "labelContent": "Emisiones",
+      "inputName": "co2Emissions",
+      "type": "number",
+      "value": "{{singleCar.co2Emissions}}"
+    },
+
+    {
+      "labelFor": "carType",
+      "labelContent": "Tipo de vehículo",
+      "inputName": "carType",
+      "type": "text",
+      "value": "{{singleCar.carType}}"
+    },
+
+    {
+      "labelFor": "airConditioner",
+      "labelContent": "Aire acondicionado",
+      "inputName": "airConditioner",
+      "type": "text",
+      "value": "{{singleCar.airConditioner}}"
+    },
+
+    {
+      "labelFor": "transmissionType",
+      "labelContent": "Transmisión",
+      "inputName": "transmissionType",
+      "type": "text",
+      "value": "{{singleCar.transmissionType}}"
+    },
+
+    {
+      "labelFor": "motorType",
+      "labelContent": "Tipo de motor",
+      "inputName": "motorType",
+      "type": "text",
+      "value": "{{singleCar.motorType}}"
+    },
+
+    {
+      "labelFor": "stock",
+      "labelContent": "Stock",
+      "inputName": "stock",
+      "type": "number",
+      "value": "{{singleCar.stock}}"
+    },
+
+    {
+      "labelFor": "availability",
+      "labelContent": "Disponibilidad",
+      "inputName": "availability",
+      "type": "text",
+      "value": "{{singleCar.availability}}"
+    },
+
+    {
+      "labelFor": "transactionType",
+      "labelContent": "Tipo de transacción",
+      "inputName": "transactionType",
+      "type": "text",
+      "value": "{{singleCar.transactionType}}"
+    }
+  ]
+}
