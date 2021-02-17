@@ -31,7 +31,10 @@
   app.use(require("./routes/index"))
   //rutas used cars
   app.use('/usedCars', usedCarRouter);
-
+  //qa
+  app.use(require('./routes_4_Quality/questionRoute'));
+  app.use(require('./routes_4_Quality/emailRoute'));
+  app.use(require('./routes_4_Quality/userRoute'));
 
 
 
