@@ -20,6 +20,7 @@ carController.createUsedCar = async (req, res) =>{
 carController.list = async (req,res)=>{
 
     const cars = await Car.find({}).lean();
+    console.log(cars);
     res.render('templates/usedCars/allUsedCarsTemplate',{carList:cars});
 };
 
