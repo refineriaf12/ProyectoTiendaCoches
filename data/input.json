@@ -94,5 +94,203 @@
             "value":"Registro",
             "required":false
         }
+    ],
+    "formNewUsedCars":[
+        {
+            "type": "text",
+            "placeholder":"Marca",
+            "modifier":"",
+            "id":"carBrand",
+            "name":"carBrand",
+            "value":"",
+            "required":false
+        },
+
+        {
+            "type": "text",
+            "placeholder":"Modelo",
+            "modifier":"",
+            "id":"carModel",
+            "name":"carModel",
+            "value":"",
+            "required":true
+        },
+
+        {
+            "type": "number",
+            "placeholder":"Año modelo",
+            "modifier":"",
+            "id":"modelYear",
+            "name":"modelYear",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "date",
+            "placeholder":"fecha ITV",
+            "modifier":"",
+            "id":"nextItvDate",
+            "name":"nextItvDate",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "number",
+            "placeholder":"Precio de venta",
+            "modifier":"",
+            "id":"sellingPrice",
+            "name":"sellingPrice",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "text",
+            "placeholder":"Ruta imagen",
+            "modifier":"",
+            "id":"carImage",
+            "name":"carImage",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "text",
+            "placeholder":"Color coche",
+            "modifier":"",
+            "id":"carColor",
+            "name":"carColor",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "number",
+            "placeholder":"Número asientos",
+            "modifier":"",
+            "id":"seatsNumber",
+            "name":"seatsNumber",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "text",
+            "placeholder":"Trasmisión",
+            "modifier":"",
+            "id":"transmissionType",
+            "name":"transmissionType",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "text",
+            "placeholder":"Tipo de motor",
+            "modifier":"",
+            "id":"motorType",
+            "name":"motorType",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "submit",
+            "value":"Crear Anuncio"
+        }
+
+    ],
+    "formEditUsedCars":[
+        {
+            "type": "text",
+            "placeholder":"Marca",
+            "modifier":"",
+            "id":"carBrand",
+            "name":"carBrand",
+            "value":"",
+            "required":true
+        },
+
+        {
+            "type": "text",
+            "placeholder":"Modelo",
+            "modifier":"",
+            "id":"carModel",
+            "name":"carModel",
+            "value":"",
+            "required":true
+        },
+
+        {
+            "type": "number",
+            "placeholder":"Año modelo",
+            "modifier":"",
+            "id":"modelYear",
+            "name":"modelYear",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "date",
+            "placeholder":"fecha ITV",
+            "modifier":"",
+            "id":"nextItvDate",
+            "name":"nextItvDate",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "number",
+            "placeholder":"Precio de venta",
+            "modifier":"",
+            "id":"sellingPrice",
+            "name":"sellingPrice",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "text",
+            "placeholder":"Ruta imagen",
+            "modifier":"",
+            "id":"carImage",
+            "name":"carImage",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "text",
+            "placeholder":"Color coche",
+            "modifier":"",
+            "id":"carColor",
+            "name":"carColor",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "number",
+            "placeholder":"Número asientos",
+            "modifier":"",
+            "id":"seatsNumber",
+            "name":"seatsNumber",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "text",
+            "placeholder":"Trasmisión",
+            "modifier":"",
+            "id":"transmissionType",
+            "name":"transmissionType",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "text",
+            "placeholder":"Tipo de motor",
+            "modifier":"",
+            "id":"motorType",
+            "name":"motorType",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "submit",
+            "value":"Editar Anuncio"
+        }
+
     ]
 }
