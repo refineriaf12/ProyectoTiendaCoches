@@ -1,0 +1,33 @@
+{{#if userDetails}}
+<form action="/updatedUserById/{{userDetails._id}}" method="post" id="formNewUser">
+    <fieldset>
+        <legend>Datos personales</legend>
+
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required autofocus maxlength="15" value="{{userDetails.name}}">
+
+        <label for="surname">Apellidos:</label>
+        <input type="text" id="surname" name="surname" placeholder="Apellidos" required maxlength="30" value="{{userDetails.surname}}">
+    </fieldset>
+    <fieldset>
+        <legend>Datos login</legend>
+
+        <label for="userName">Nombre de usuario:</label>
+        <input type="text" id="userName" name="userName" placeholder="Nombre de usuario" required maxlength="15" value="{{userDetails.userName}}">
+
+        <label for="password">Contraseña:</label>
+        <input type="password" name="password" id="password" placeholder="Contraseña" required minlength="6" value="{{userDetails.password}}">
+
+        <label for="avatar">Avatar:</label>
+        <input type="file" id="avatar" name="avatar" value="{{userDetails.avatar}}">
+    </fieldset>
+    <fieldset>
+        <legend>Datos contacto</legend>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Correo electrónico" required value="{{userDetails.email}}">
+    </fieldset>
+    <button id="btnForm" type="submit" value="Crear usuario">Guardar cambios</button> 
+
+</form>
+{{/if}}

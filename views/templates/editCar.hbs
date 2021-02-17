@@ -1,0 +1,42 @@
+<h2>Editar Anuncio Coche</h2>
+
+<form action="/usedCars/edit/:id" method="post">
+    <fieldset>
+        <legend>Añadir Anuncio Coche</legend>
+
+        <label for="carBrand">Marca</label>
+        <input type="text" name="carBrand" value="{{this.carBrand}}" >
+
+        <label for="carModel">Modelo</label>
+        <input type="text" name="carModel" value="{{this.carModel}}">
+
+        <label for="modelYear">Año del Modelo</label>
+        <input type="number" name="modelYear" value="{{this.modelYear}}">
+
+        <label for="nextItvDate">Fecha Proxima Itv</label>
+        <input type="text" name="nextItvDate" value="{{this.nextItvDate}}">
+
+        <label for="sellingPrice">Precio de Venta</label>
+        <input type="number" name="sellingPrice" value="{{this.sellingPrice}}">
+
+        <label for="carImage">Imagen del Coche</label>
+        <input type="text" name="carImage" value="{{this.carImage}}">
+
+        <label for="carColor">Color del Coche</label>
+        <input type="text" name="carColor" value="{{this.carColor}}">
+
+        <label for="seatsNumber">Nº de Asientos</label>
+        <input type="number" name="seatsNumber" value="{{this.seatsNumber}}">
+
+        <label for="doorNumber">Nº de Puertas</label>
+        <input type="number" name="doorNumber" value="{{this.doorNumber}}">
+
+        <label for="transmissionType">Tipo de Transmisión</label>
+        <input type="text" name="transmissionType" value="{{this.transmissionType}}">
+        
+        <label for="motorType">Tipo de Motor</label>
+        <input type="text" name="motorType" value="{{this.motorType}}">
+
+        <input type="submit" value="Editar Anuncio">
+    </fieldset>
+</form>

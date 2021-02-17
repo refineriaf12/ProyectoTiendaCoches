@@ -1,38 +1,72 @@
-'use strict';
+'use strict'
 
-const {Schema, model} = require('mongoose');
+const {Schema, model, now} = require("mongoose");
 
-const userSchema = new Schema({
-    name: {
-        type: String,
-        required:true
+const userSchema = new Schema ({
+    name : {
+        type : String,
+        required : true
     },
+
     surname: {
-        type: String,
-        required:true
+        type : String,
+        required : true
     },
+
     dniNumber: {
-        type:Number,
-        required:true
+        type : String
     },
-    userName: {
+
+    userName : {
+        type : String,
+        required : true,
+        unique : true,
+        lowercase : true
+    },
+    
+    password : {
+        type : String,
+        required : true,
+        minlength: 6
+    },
+    
+    email : {
+        type : String,
+        required : true,
+        unique : true
+    },
+
+    avatar : {
         type: String,
-        required:true
+        default :"./img/profile.png"
     },
-    password: {
-        type: String,
-        required:true
+
+    membership: {
+        type : String,
+        default : "Free",
+        enum: ["Free", "Gold", "Silver", "Bronze"],
+        required : true
     },
-    email: {
-        type: String,
-        required:true
+
+    membershipExpirationDate:{
+        type : Date,
+        default: Date.now
     },
-    avatar: String,
-    membership: String,
-    membershipExpirationDate: Date,
-    leasedCars:{
-        type:[Schema.Types.ObjectId]
-    },
+
+    leasedCars: {
+        type : String
+    }
+
 });
 
-module.exports = model('User', userSchema, 'users');
+userSchema.index({userName:"text"});
+
+module.exports = model("User", userSchema, "users")
+
+
+
+
+
+
+
+
