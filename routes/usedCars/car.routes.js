@@ -2,7 +2,7 @@
 
 const { Router } = require ('express');
 const router = Router();
-const carController = require('../controllers/car.controller');
+const carController = require('../../controllers/usedCars/car.controller');
 
 
 
