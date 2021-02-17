@@ -4,7 +4,7 @@
         {
             "type":"text",
             "placeholder":"Usuario",
-            "modifier":"-borderBloodOrange",
+            "modifier":"-borderColorBloodOrange",
             "id":"usernameLogin",
             "name":"usernameLogin",
             "required":true
@@ -12,7 +12,7 @@
         {
             "type":"password",
             "placeholder":"Contraseña",
-            "modifier":"-borderBloodOrange",
+            "modifier":"-borderColorBloodOrange",
             "id":"passwordLogin",
             "name":"passwordLogin",
             "required":true
@@ -28,7 +28,7 @@
         {
             "type":"text",
             "placeholder":"Nombre",
-            "modifier":"-borderBloodOrange",
+            "modifier":"-borderColorBloodOrange",
             "id":"nameRegister",
             "name":"nameRegister",
             "value":"",
@@ -37,7 +37,7 @@
         {
             "type":"text",
             "placeholder":"Apellido",
-            "modifier":"-borderBloodOrange",
+            "modifier":"-borderColorBloodOrange",
             "id":"surnameRegister",
             "name":"surnameRegister",
             "value":"",
@@ -46,7 +46,7 @@
         {
             "type":"text",
             "placeholder":"numero de DNI",
-            "modifier":"-borderBloodOrange",
+            "modifier":"-borderColorBloodOrange",
             "id":"dniRegister",
             "name":"dniRegister",
             "value":"",
@@ -55,7 +55,7 @@
         {
             "type":"text",
             "placeholder":"Usuario",
-            "modifier":"-borderBloodOrange",
+            "modifier":"-borderColorBloodOrange",
             "id":"usernameRegister",
             "name":"usernameRegister",
             "value":"",
@@ -64,7 +64,7 @@
         {
             "type":"password",
             "placeholder":"Contraseña",
-            "modifier":"-borderBloodOrange",
+            "modifier":"-borderColorBloodOrange",
             "id":"passwordRegister",
             "name":"passwordRegister",
             "value":"",
@@ -73,7 +73,7 @@
         {
             "type":"email",
             "placeholder":"Email",
-            "modifier":"-borderBloodOrange",
+            "modifier":"-borderColorBloodOrange",
             "id":"emailRegister",
             "name":"emailRegister",
             "value":"",
@@ -82,7 +82,7 @@
         {
             "type":"url",
             "placeholder":"Avatar",
-            "modifier":"-borderBloodOrange",
+            "modifier":"-borderColorBloodOrange",
             "id":"avatarRegister",
             "name":"avatarRegister",
             "value":"",

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap");
 @import url("navbar.css");
 @import url("slider.css");
+@import url("forms.css");
 
 *{
     font-family: 'Montserrat', sans-serif;
@@ -33,7 +34,7 @@
   color:white;
 }
 .-borderColorBlue{
-  border-color:1px solid var(--blue);
+  border:1px solid var(--blue);
 }
 
 
@@ -46,7 +47,7 @@
   color:white;
 }
 .-borderColorYellow{
-  border-color:1px solid var(--yellow);
+  border:1px solid var(--yellow);
 }
 
 
@@ -59,7 +60,7 @@
   color:white;
 }
 .-borderColorOrange{
-  border-color:1px solid var(--orange);
+  border:1px solid var(--orange);
 }
 
 
@@ -72,7 +73,7 @@
     color:white;
 }
 .-borderColorBloodOrange{
-  border-color:1px solid var(--blood-orange);
+  border:1px solid var(--blood-orange);
 }
 
 
@@ -85,7 +86,7 @@
   color:white;
 }
 .-borderColorRed{
-  border-color:1px solid var(--red);
+  border:1px solid var(--red);
 }
 
 
