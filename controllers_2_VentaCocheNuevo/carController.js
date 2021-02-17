@@ -8,10 +8,12 @@ const carController = {};
 
     carController.showCarDetail = async (req,res) => res.render("templates/templates_2_VentaCocheNuevo/carDetailTemplate", await getSingleCar({_id:req.params.id}));
 
-    carController.renderUpdateForm = async (req, res) => 
-    {   
+    carController.renderUpdateForm = async (req, res) => {
+
         const singleCar = await getSingleCar({_id:req.params.id});
-        res.render("templates/templates_2_VentaCocheNuevo/formUpdate", {arrayInputList:inputs.updateForm})};
+        res.render("templates/templates_2_VentaCocheNuevo/formUpdate", {arrayInputList:inputs.updateForm});
+
+    };
 
     carController.newCarCreation = (req,res) => {
 
