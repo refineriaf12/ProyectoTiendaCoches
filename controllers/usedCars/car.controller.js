@@ -1,6 +1,6 @@
 'use strict';
 const input = require("../../data/input.json");
-const Car = require('../../models/Car');
+const Car = require('../../models/usedCars');
 
 const carController = {};
 
@@ -13,8 +13,8 @@ carController.createUsedCar = async (req, res) =>{
     let newCar = new Car({carBrand, carModel, modelYear, nextItvDate, sellingPrice, carImage, carColor, seatsNumber, doorNumber, transmissionType, motorType}); 
     console.log(req.body);
     await newCar.save();     
-    res.redirect('/usedCarCatalog'); 
-    
+    res.redirect('/usedCars/usedCarCatalog'); 
+
 };
 
 carController.list = async (req,res)=>{

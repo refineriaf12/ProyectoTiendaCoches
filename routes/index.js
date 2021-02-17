@@ -14,10 +14,7 @@ router.get("/register", (req, res) => {
     res.render("templates/register", {atomList:input.formRegister});
 });
 
-//ruta listado coches usados
-router.get('/usedCarCatalog',(req,res)=>{
-    res.render("templates/usedCars/allUsedCarsTemplate");
-})
+
 
 
 

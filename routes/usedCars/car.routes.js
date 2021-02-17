@@ -5,6 +5,11 @@ const router = Router();
 const carController = require('../../controllers/usedCars/car.controller');
 
 
+//ruta listado coches usados
+router.get('/usedCarCatalog',(req,res)=>{
+    res.render("templates/usedCars/allUsedCarsTemplate");
+})
+
 
     router.get('/add', carController.formCreateUsedCar);
     router.post('/createUsedCar', carController.createUsedCar);

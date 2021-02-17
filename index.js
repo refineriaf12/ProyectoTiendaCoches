@@ -6,7 +6,7 @@
   const port = 8000;
 
   //llamada a rutas usedCars
-  const carRouter = require('./routes/usedCars/car.routes')
+  const usedCarRouter = require('./routes/usedCars/car.routes')
 
   
   require('./database');
@@ -30,7 +30,7 @@
   app.use(express.json());
   app.use(require("./routes/index"))
   //rutas used cars
-  app.use('/usedCars', carRouter);
+  app.use('/usedCars', usedCarRouter);
 
 
 
