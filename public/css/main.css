@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap");
+@import url("navbar.css");
+@import url("slider.css");
+
 *{
     font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    color: var(--black);
 }
 :root{
     --grey: #8c8c8c;
@@ -9,18 +14,91 @@
     --blue: #4983ad;
     --yellow: #dbc34d;
     --orange: #db9050;
-    --blod-orange: #c2654e;
+    --blood-orange: #c2654e;
     --red: #b84848;
+    --shadow:0px 3px 4px -2px #0d0d0d;
+
     --extra-light: 200;
     --regular: 400;
     --semibold: 600;
     --extra-bold: 800;
 }
 
--backgroundColorOrange{
-    background-color: var(--orange);
+.-backgroundColorBlue{
+  background-color: var(--blue);
+  color:white;
+}
+.-backgroundColorBlue__OnHover:hover{
+  background-color: var(--blue);
+  color:white;
+}
+.-borderColorBlue{
+  border-color:1px solid var(--blue);
 }
 
+
+.-backgroundColorYellow{
+  background-color: var(--yellow);
+  color:white;
+}
+.-backgroundColorYellow__OnHover:hover{
+  background-color: var(--yellow);
+  color:white;
+}
+.-borderColorYellow{
+  border-color:1px solid var(--yellow);
+}
+
+
+.-backgroundColorOrange{
+  background-color: var(--orange);
+  color:white;
+}
+.-backgroundColorOrange__OnHover:hover{
+  background-color: var(--orange);
+  color:white;
+}
+.-borderColorOrange{
+  border-color:1px solid var(--orange);
+}
+
+
+.-backgroundColorBloodOrange{
+    background-color: var(--blood-orange);
+    color:white;
+}
+.-backgroundColorBloodOrange__OnHover:hover{
+    background-color: var(--blood-orange);
+    color:white;
+}
+.-borderColorBloodOrange{
+  border-color:1px solid var(--blood-orange);
+}
+
+
+.-backgroundColorRed{
+  background-color: var(--red);
+  color:white;
+}
+.-backgroundColorRed__OnHover:hover{
+  background-color: var(--red);
+  color:white;
+}
+.-borderColorRed{
+  border-color:1px solid var(--red);
+}
+
+
+.-backgroundColorGrey{
+  background-color: var(--grey);
+  color:white;
+}
+.-backgroundColorLigthGrey{
+  background-color: var(--light-grey);
+}
+.-shadow{
+  box-shadow: var(--shadow);
+}
 
 
 

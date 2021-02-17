@@ -1,0 +1,10 @@
+.M-nav__navList{
+    display: flex;
+    
+}
+
+.A-navList__link, .A-navList__searchBar{
+    width:fit-content;
+    padding:0.5vw 1vw;
+}
+
