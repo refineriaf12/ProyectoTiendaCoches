@@ -1,9 +1,12 @@
 const express = require("express");
 const router = express.Router();
 
+
+
 router.get("/controlPanel", function (req,res){
-    res.render("templates/controlPanel")
+    res.render("templates/templates_2_VentaCocheNuevo/controlPanel")
 });
+
 
 
 

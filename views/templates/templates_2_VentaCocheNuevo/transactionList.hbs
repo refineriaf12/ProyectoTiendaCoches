@@ -1,7 +1,8 @@
+{{>partials_2_VentaCocheNuevo/organisms/navBar}}
 <h1> Registro de ventas </h1>
 
 {{#each transactionListArray}}
-    <a href="/transactionDetail/{{this._id}}">
+    <a href="/newCars/transactionDetail/{{this._id}}">
         <section>
             <h2>Venta: {{this._id}}</h2>
             <p>Fecha de venta: {{this.transactionDate}}</p>
@@ -10,6 +11,5 @@
     </a>
 {{/each}}
 
-{{>atoms/buttons/benefit}}
 
-{{>atoms/buttons/homeButton}}
+{{>partials_2_VentaCocheNuevo/atoms/buttons/homeButton}}

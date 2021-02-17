@@ -1,13 +1,13 @@
-const{getSingleCar,updateCar}=require("../Functions/carFunctions");
-const{getTransactions,getSingleTransaction,createTransaction,calculateBenefits}=require("../Functions/transactionFunctions");
+const{getSingleCar,updateCar}=require("../Functions/functions_2_VentaCocheNuevo/carFunctions");
+const{getTransactions,getSingleTransaction,createTransaction,calculateBenefits}=require("../Functions/functions_2_VentaCocheNuevo/transactionFunctions");
 
 const transactionController ={};
 
-transactionController.showTransactionList = async(req,res)=>res.render("templates/transactionList",{transactionListArray:await getTransactions()});
+transactionController.showTransactionList = async(req,res)=>res.render("templates/templates_2_VentaCocheNuevo/transactionList",{transactionListArray:await getTransactions()});
 
-transactionController.showTransactionDetail = async (req,res)=> res.render("templates/transactionDetailTemplate", await getSingleTransaction({_id:req.params.id}));
+transactionController.showTransactionDetail = async (req,res)=> res.render("templates/templates_2_VentaCocheNuevo/transactionDetailTemplate", await getSingleTransaction({_id:req.params.id}));
 
-transactionController.calculateBenefits =async  (req,res)=> res.render("templates/benefitsTemplate",{benefits:await calculateBenefits()});
+transactionController.calculateBenefits =async  (req,res)=> res.render("templates/templates_2_VentaCocheNuevo/benefitsTemplate",{benefits:await calculateBenefits()});
 
 transactionController.buyCar = async (req,res) => {
 

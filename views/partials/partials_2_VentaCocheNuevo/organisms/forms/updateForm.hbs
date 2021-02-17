@@ -1,8 +1,8 @@
-<form action="/updateCar/{{this._id}}" method="POST">
+<form action="/newCars/updateCar/{{this._id}}" method="POST">
     <fieldset>
 
         {{#each arrayInputList}}
-            {{>atoms/forms/input}}
+            {{>partials_2_VentaCocheNuevo/atoms/forms/input}}
         {{/each}}
           <input type="submit" value="Enviar">
        
