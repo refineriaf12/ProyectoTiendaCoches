@@ -1,7 +1,7 @@
 'use strict'
 
 const { response } = require('express');
-const question = require('../data/faqs.json');
+const question = require('../../data/faqs.json');
 
 const questionController = {
     

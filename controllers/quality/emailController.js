@@ -1,8 +1,8 @@
 'use strict'
 
 const nodemailer = require('nodemailer');
-const input = require('../data/input.json')
-const Email = require('../models/emailModel');
+const input = require('../../data/input.json')
+const Email = require('../../models/emailModel');
 
 const emailController = {
     

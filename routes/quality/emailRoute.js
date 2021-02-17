@@ -3,7 +3,7 @@
 const { Router } = require('express');
 const router = Router();
 
-const emailController = require('../controllers_4_Quality/emailController');
+const emailController = require('../../controllers/quality/emailController');
 
 //Metodo GET, muestre el formulario
 router.get('/form', emailController.showFormToSendEmail);
