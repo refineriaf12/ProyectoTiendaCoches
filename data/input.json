@@ -449,137 +449,118 @@
     "updateForm": [
         {
           "type": "text",
-          "placeHolder": "Marca",
+          "placeholder": "Marca",
           "modifier": "",
           "id": "carBrand",
-          "name": "carBrand",
-          "value": "{{singleCar.carBrand}}"
+          "name": "carBrand"
         },{
           "type": "text",
-          "placeHolder": "Modelo",
+          "placeholder": "Modelo",
           "modifier": "",
           "id": "carModel",
-          "name": "carModel",
-          "value": "{{singleCar.carModel}}"
+          "name": "carModel"
         },{
           "type": "number",
-          "placeHolder": "Año",
+          "placeholder": "Año",
           "modifier": "",
           "id": "modelYear",
-          "name": "modelYear",
-          "value": "{{singleCar.modelYear}}"
+          "name": "modelYear"
         },{
           "type": "date",
-          "placeHolder": "Proxima ITV",
+          "placeholder": "Proxima ITV",
           "modifier": "",
           "id": "nextItvDate",
-          "name": "nextItvDate",
-          "value": "{{singleCar.nextItvDate}}"
+          "name": "nextItvDate"
         },{
           "type": "number",
-          "placeHolder": "Precio venta",
+          "placeholder": "Precio venta",
           "modifier": "",
           "id": "sellingPrice",
-          "name": "sellingPrice",
-          "value": "{{singleCar.sellingPrice}}"
+          "name": "sellingPrice"
         },{
           "type": "number",
-          "placeHolder": "Precio Coste",
+          "placeholder": "Precio Coste",
           "modifier": "",
           "id": "costPrice",
-          "name": "costPrice",
-          "value": "{{singleCar.costPrice}}"
+          "name": "costPrice"
         },{
           "type": "url",
-          "placeHolder": "Ruta imagen",
+          "placeholder": "Ruta imagen",
           "modifier": "",
           "id": "carImage",
-          "name": "carImage",
-          "value": "{{singleCar.carImage}}"
+          "name": "carImage"
         },{
           "type": "text",
-          "placeHolder": "Color",
+          "placeholder": "Color",
           "modifier": "",
           "id": "carColor",
-          "name": "carColor",
-          "value": "{{singleCar.carColor}}"
+          "name": "carColor"
         },{
           "type": "number",
-          "placeHolder": "Num asientos",
+          "placeholder": "Num asientos",
           "modifier": "",
           "id": "seatsNumber",
-          "name": "seatsNumber",
-          "value": "{{singleCar.seatsNumber}}"
+          "name": "seatsNumber"
         },{
           "type": "number",
-          "placeHolder": "Num puertas",
+          "placeholder": "Num puertas",
           "modifier": "",
           "id": "doorNumber",
-          "name": "doorNumber",
-          "value": "{{singleCar.doorNumber}}"
+          "name": "doorNumber"
         },{
           "type": "number",
-          "placeHolder": "Volumen maletero",
+          "placeholder": "Volumen maletero",
           "modifier": "",
           "id": "trunkSize",
-          "name": "trunkSize",
-          "value": "{{singleCar.trunkSize}}"
+          "name": "trunkSize"
         },{
           "type": "number",
-          "placeHolder": "emisiones CO2",
+          "placeholder": "emisiones CO2",
           "modifier": "",
           "id": "co2Emissions",
-          "name": "co2Emissions",
-          "value": "{{singleCar.co2Emissions}}"
+          "name": "co2Emissions"
         },{
           "type": "text",
-          "placeHolder": "Tipo de coche",
+          "placeholder": "Tipo de coche",
           "modifier": "",
           "id": "carType",
-          "name": "carType",
-          "value": "{{singleCar.carType}}"
+          "name": "carType"
         },{
           "type": "text",
-          "placeHolder": "Aire acondicionado",
+          "placeholder": "Aire acondicionado",
           "modifier": "",
           "id": "airConditioner",
-          "name": "airConditioner",
-          "value": "{{singleCar.airConditioner}}"
+          "name": "airConditioner"
         },{
           "type": "text",
-          "placeHolder": "Transmision",
+          "placeholder": "Transmision",
           "modifier": "",
           "id": "transmissionType",
-          "name": "transmissionType",
-          "value": "{{singleCar.transmissionType}}"
+          "name": "transmissionType"
         },{
           "type": "text",
-          "placeHolder": "Tipo de motor",
+          "placeholder": "Tipo de motor",
           "modifier": "",
           "id": "motorType",
-          "name": "motorType",
-          "value": "{{singleCar.motorType}}"
+          "name": "motorType"
         },{
           "type": "number",
-          "placeHolder": "Stock",
+          "placeholder": "Stock",
           "modifier": "",
           "id": "stock",
-          "name": "stock",
-          "value": "{{singleCar.stock}}"
+          "name": "stock"
         },{
           "type": "text",
-          "placeHolder": "Disponibilidad",
+          "placeholder": "Disponibilidad",
           "modifier": "",
           "id": "availability",
-          "name": "availability",
-          "value": "{{singleCar.availability}}"
+          "name": "availability"
         },{
           "type": "text",
-          "placeHolder": "Operacion",
+          "placeholder": "Operacion",
           "modifier": "",
           "id": "transactionType",
-          "name": "transactionType",
-          "value": "{{singleCar.transactionType}}"
+          "name": "transactionType"
         }
       ]
 }
