@@ -1,0 +1,13 @@
+<section>
+
+    {{#each listOfUsers}}
+        <ul>
+            <a href="/rentalUsers/detail/{{_id}}">
+                <li>Nombre: {{name}}</li>
+                <li>Apellidos: {{surname}}</li>
+                <li>Nombre de usuario: {{userName}}</li>
+            </a>
+        </ul>
+    {{/each}}
+
+</section>

@@ -1,0 +1,43 @@
+<section>
+    <label for="name">Nombre:{{userDetail.name}} </label>
+</section>
+<br>
+<section>
+    <label for="surname">Apellidos:{{userDetail.surname}} </label>
+</section>
+<br>
+<section>
+    <label for="dniNumber">DNI:{{userDetail.dniNumber}} </label>
+</section>
+<br>
+<section>
+    <label for="userName">Nombre de usuario:{{userDetail.userName}} </label>
+</section>
+<br>
+<section>
+    <label for="password">Contraseña:{{userDetail.password}} </label>
+</section>
+<br>
+<section>
+    <label for="email">Email:{{userDetail.email}} </label>
+</section>
+<br>
+<section>
+    <label for="avatar">Avatar:{{userDetail.avatar}} </label>
+</section>
+<br>
+<section>
+    <label for="membership">Membresía:{{userDetail.membership}} </label>
+</section>
+<br>
+<section>
+    <label for="membershipExpirationDate">Fecha fin de usuario:{{userDetail.membershipExpirationDate}} </label>
+</section>
+
+{{!-- <section>
+    <label for="leasedCars">Coches alquilados:{{userDetail.leasedCars}} </label>
+</section>
+<br> --}}
+
+<a href="/rentalUsers/deleteUser/{{userDetail._id}}">Borrar</a>
+<a href="/rentalUsers/updateUser/{{userDetail._id}}">Editar</a>

@@ -1,0 +1,58 @@
+<form action="/rentalUsers/createUser" method="POST" id="formUser">
+
+    <h2>Usuario nuevo</h2>
+
+    <section>
+        <label for="name">Nombre: </label>
+        <input type="text" id="name" name="name" placeholder="Nombre">
+    </section>
+
+    <section>
+        <label for="surname">Apellidos: </label>
+        <input type="text" id="surname" name="surname" placeholder="Apellidos">
+    </section>
+
+    <section>
+        <label for="dniNumber">DNI: </label>
+        <input type="number" id="dniNumber" name="dniNumber" placeholder="Número DNI">
+    </section>
+
+    <section>
+        <label for="userName">Nombre de usuario: </label>
+        <input type="text" id="userName" name="userName" placeholder="Usuario">
+    </section>
+
+    <section>
+        <label for="password">Contraseña: </label>
+        <input type="password" id="password" name="password" placeholder="Contraseña">
+    </section>
+
+    <section>
+        <label for="email">Dirección de email: </label>
+        <input type="email" id="email" name="email" placeholder="Email">
+    </section>
+
+    <section>
+        <label for="avatar">Foto del usuario: </label>
+        <input type="file" id="avatar" name="avatar" placeholder="Imagen del usuario">
+    </section>
+
+    <section>
+        <label for="membership">Membresía: </label>
+        <input type="text" id="membership" name="membership" placeholder="Membresía">
+    </section>
+
+    <section>
+        <label for="membershipExpirationDate">Fecha fin usuario: </label>
+        <input type="date" id="membershipExpirationDate" name="membershipExpirationDate" placeholder="Fecha expiración">
+    </section>
+
+    {{!-- <section>
+        <label for="leasedCars">Coches alquilados: </label>
+        <input type="text" id="leasedCars" name="leasedCars" placeholder="Coches alquilados">
+    </section> --}}
+
+    <button type="submit">Enviar</button>
+    <button type="reset">Reset</button>
+
+</form>
