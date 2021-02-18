@@ -1,4 +1,4 @@
-.A-form_input, .-shadow{
+.A-form_input::placeholder, .-shadow{
     background-color: white;
     padding: 0.5vw 1vw;
     border:none;

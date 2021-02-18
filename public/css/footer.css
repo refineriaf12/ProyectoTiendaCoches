@@ -6,16 +6,16 @@
     height: 8vh;
     border-radius: 50px;
     top: -50%;
-    position: absolute;
+    position: relative;
            
     
 }
 
 .O-footer{
     background: var(--light-grey);
-    height:5vw;
+    height:3vw;
     width: 63vw;
-    position: fixed;
+    position: relative;
     display: flex;
     bottom: 0px;
    

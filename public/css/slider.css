@@ -54,13 +54,29 @@
     padding: 0 1vw;
 }
 
-.A-priceSlider__link{
+.A-priceSlider__linkSale{
     text-align: center;
     width: 100%;
     padding: 0.5vw 1vw;
     margin-top: 1vw;
     display:block;
     text-decoration: none;
+}
+.A-priceSlider__linkLeasing{
+  text-align: center;
+  width: 100%;
+  padding: 0.5vw 1vw;
+  margin-top: 1vw;
+  display:block;
+  text-decoration: none;
+}
+.A-priceSlider__linkUsedCars{
+  text-align: center;
+  width: 100%;
+  padding: 0.5vw 1vw;
+  margin-top: 1vw;
+  display:block;
+  text-decoration: none;
 }
 
 .-slide-left {
