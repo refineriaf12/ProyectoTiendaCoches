@@ -18,7 +18,7 @@ const carController = {};
     carController.newCarCreation = (req,res) => {
 
         createCar(req.body).save()
-            res.redirect("/newCars")
+        res.redirect("/newCars")
 
 
     };
@@ -26,7 +26,7 @@ const carController = {};
     carController.carDelete = (req,res) =>{
 
         deleteCar({_id:req.params.id})
-            res.redirect("/newCars")
+        res.redirect("/newCars")
             
     };
 
@@ -35,8 +35,7 @@ const carController = {};
         const filter = {_id:req.params.id};
         const update = req.body;
         updateCar(filter,update)
-           res.redirect("/newCars")
-        rs
+        res.redirect("/newCars")
 
     };
 

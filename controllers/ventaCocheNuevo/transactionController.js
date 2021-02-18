@@ -1,4 +1,4 @@
-const{getSingleCar,updateCar}=require("./carFunctions");
+const{getSingleCar,updateCar,getCars}=require("./carFunctions");
 const{getTransactions,getSingleTransaction,createTransaction,calculateBenefits}=require("./transactionFunctions");
 
 const transactionController ={};
@@ -23,13 +23,16 @@ transactionController.buyCar = async (req,res) => {
         await newTransaction.save();
         await updateCar({_id:req.params.id},{stock:newStock});
 
-    }
-    if(newStock==0){
-        await updateCar({_id:req.params.id},{availability:"no disponible"});
+        if(newStock==0){
+            await updateCar({_id:req.params.id},{availability:"no disponible"});
+
+        }
+        return res.render("templates/ventaCocheNuevo/carList",{carListArray:await getCars()});
 
     }
 
-    res.redirect("/newCars");
+
+    return res.render("templates/ventaCocheNuevo/carList",{error:true,carListArray:await getCars()});
 
 };
 
