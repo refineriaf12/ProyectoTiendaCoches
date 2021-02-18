@@ -14,7 +14,7 @@ const carSchema = new Schema({
         type: String,
         required:true
     },
-    nextItvDate: String,
+    nextItvDate: Date,
     sellingPrice: Number,
     costPrice: Number,
     leasingPrice: Number,

@@ -445,5 +445,141 @@
             "value":"reset",
             "required":false
         }
-	]
+	],
+    "updateForm": [
+        {
+          "type": "text",
+          "placeHolder": "Marca",
+          "modifier": "",
+          "id": "carBrand",
+          "name": "carBrand",
+          "value": "{{singleCar.carBrand}}"
+        },{
+          "type": "text",
+          "placeHolder": "Modelo",
+          "modifier": "",
+          "id": "carModel",
+          "name": "carModel",
+          "value": "{{singleCar.carModel}}"
+        },{
+          "type": "number",
+          "placeHolder": "Año",
+          "modifier": "",
+          "id": "modelYear",
+          "name": "modelYear",
+          "value": "{{singleCar.modelYear}}"
+        },{
+          "type": "date",
+          "placeHolder": "Proxima ITV",
+          "modifier": "",
+          "id": "nextItvDate",
+          "name": "nextItvDate",
+          "value": "{{singleCar.nextItvDate}}"
+        },{
+          "type": "number",
+          "placeHolder": "Precio venta",
+          "modifier": "",
+          "id": "sellingPrice",
+          "name": "sellingPrice",
+          "value": "{{singleCar.sellingPrice}}"
+        },{
+          "type": "number",
+          "placeHolder": "Precio Coste",
+          "modifier": "",
+          "id": "costPrice",
+          "name": "costPrice",
+          "value": "{{singleCar.costPrice}}"
+        },{
+          "type": "url",
+          "placeHolder": "Ruta imagen",
+          "modifier": "",
+          "id": "carImage",
+          "name": "carImage",
+          "value": "{{singleCar.carImage}}"
+        },{
+          "type": "text",
+          "placeHolder": "Color",
+          "modifier": "",
+          "id": "carColor",
+          "name": "carColor",
+          "value": "{{singleCar.carColor}}"
+        },{
+          "type": "number",
+          "placeHolder": "Num asientos",
+          "modifier": "",
+          "id": "seatsNumber",
+          "name": "seatsNumber",
+          "value": "{{singleCar.seatsNumber}}"
+        },{
+          "type": "number",
+          "placeHolder": "Num puertas",
+          "modifier": "",
+          "id": "doorNumber",
+          "name": "doorNumber",
+          "value": "{{singleCar.doorNumber}}"
+        },{
+          "type": "number",
+          "placeHolder": "Volumen maletero",
+          "modifier": "",
+          "id": "trunkSize",
+          "name": "trunkSize",
+          "value": "{{singleCar.trunkSize}}"
+        },{
+          "type": "number",
+          "placeHolder": "emisiones CO2",
+          "modifier": "",
+          "id": "co2Emissions",
+          "name": "co2Emissions",
+          "value": "{{singleCar.co2Emissions}}"
+        },{
+          "type": "text",
+          "placeHolder": "Tipo de coche",
+          "modifier": "",
+          "id": "carType",
+          "name": "carType",
+          "value": "{{singleCar.carType}}"
+        },{
+          "type": "text",
+          "placeHolder": "Aire acondicionado",
+          "modifier": "",
+          "id": "airConditioner",
+          "name": "airConditioner",
+          "value": "{{singleCar.airConditioner}}"
+        },{
+          "type": "text",
+          "placeHolder": "Transmision",
+          "modifier": "",
+          "id": "transmissionType",
+          "name": "transmissionType",
+          "value": "{{singleCar.transmissionType}}"
+        },{
+          "type": "text",
+          "placeHolder": "Tipo de motor",
+          "modifier": "",
+          "id": "motorType",
+          "name": "motorType",
+          "value": "{{singleCar.motorType}}"
+        },{
+          "type": "number",
+          "placeHolder": "Stock",
+          "modifier": "",
+          "id": "stock",
+          "name": "stock",
+          "value": "{{singleCar.stock}}"
+        },{
+          "type": "text",
+          "placeHolder": "Disponibilidad",
+          "modifier": "",
+          "id": "availability",
+          "name": "availability",
+          "value": "{{singleCar.availability}}"
+        },{
+          "type": "text",
+          "placeHolder": "Operacion",
+          "modifier": "",
+          "id": "transactionType",
+          "name": "transactionType",
+          "value": "{{singleCar.transactionType}}"
+        }
+      ]
 }

@@ -36,7 +36,10 @@
   app.use(require('./routes/quality/emailRoute'));
   //leasing
   app.use(require('./routes/leasing/Car.routes'));
-
+  //ventas
+  app.use("/newCars",require ("./routes/ventaCocheNuevo/indexRouter"));
+  app.use("/newCars",require ("./routes/ventaCocheNuevo/carRouter"));
+  app.use("/newCars",require("./routes/ventaCocheNuevo/transactionRouter"))
 
 
   

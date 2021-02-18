@@ -1,0 +1,17 @@
+{{>organisms/nav/navSales}}
+<h1> Venta Coches Nuevos </h1>
+
+{{#each carListArray}}
+    <a href="/newCars/carDetail/{{this._id}}">
+        <section>
+           
+                {{>atoms/thumbnailsCar/thumbnailList}}
+                {{>atoms/details/brand}}
+                {{>atoms/details/model}}
+                {{>atoms/details/transmission}}
+                {{>atoms/details/combustible}}
+                {{>atoms/details/price}}
+
+        </section>
+    </a>
+{{/each}}
