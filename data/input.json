@@ -333,5 +333,117 @@
             "value":"SEND",
             "required":false
         }
-    ]
+    ],
+    "newCarForm":[
+		{
+			"type": "text",
+			"placeholder": "Marca",
+			"modifier":"",
+			"id": "carBrand",
+			"name": "carBrand",
+			"required": true
+		},
+		{
+			"type": "text",
+			"placeholder": "Modelo",
+			"modifier":"",
+			"id": "carModel",
+			"name": "carModel",
+			"required": true
+		},
+		{
+			"type": "number",
+			"placeholder": "Precio alquiler",
+			"modifier":"",
+			"id": "leasingPrice",
+			"name": "leasingPrice"
+		},
+		{
+			"type": "url",
+			"placeholder": "Imagen",
+			"modifier":"",
+			"id": "carImage",
+			"name": "carImage",
+			"required": true
+		},
+		{
+			"type": "number",
+			"placeholder": "Nº de asientos",
+			"modifier":"",
+			"id": "seatsNumber",
+			"name": "seatsNumber",
+			"required": true
+		},
+		{
+			"type": "number",
+			"placeholder": "Nº de puertas",
+			"modifier":"",
+			"id": "doorNumber",
+			"name": "doorNumber",
+			"required": true
+		},
+		{
+			"type": "number",
+			"placeholder": "Tamaño maletero",
+			"modifier":"",
+			"id": "trunkSize",
+			"name": "trunkSize"
+		},
+		{
+			"type": "text",
+			"placeholder": "co2 emisiones",
+			"modifier":"",
+			"id": "co2Emissions",
+			"name": "co2Emissions"
+		},
+		{
+			"type": "text",
+			"placeholder": "Tipo de coche",
+			"modifier":"",
+			"id": "carType",
+			"name": "carType"
+		},
+		{
+			"type": "text",
+			"placeholder": "Aire acondicionado",
+			"modifier":"",
+			"id": "airConditioner",
+			"name": "airConditioner"
+		},
+		{
+			"type": "text",
+			"placeholder": "Tipo de transmisión",
+			"modifier":"",
+			"id": "transmissionType",
+			"name": "transmissionType",
+			"required": "true"
+		},
+		{
+			"type": "text",
+			"placeholder": "Tipo de motor",
+			"modifier":"",
+			"id": "motorType",
+			"name": "motorType",
+			"required": "true"
+		},
+		{
+			"type": "text",
+			"placeholder": "Disponibilidad",
+			"modifier":"",
+			"id": "availability",
+			"name": "availability"
+		},
+		{
+            "type":"submit",
+            "modifier":"",
+            "value":"Enviar",
+            "required":false
+        },
+		{
+            "type":"reset",
+            "modifier":"",
+            "value":"reset",
+            "required":false
+        }
+	]
 }

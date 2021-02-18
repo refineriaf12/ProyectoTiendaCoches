@@ -34,7 +34,8 @@
   //qa
   app.use(require('./routes/quality/questionRoute'));
   app.use(require('./routes/quality/emailRoute'));
-
+  //leasing
+  app.use(require('./routes/leasing/Car.routes'));
 
 
 
