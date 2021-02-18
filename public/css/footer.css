@@ -1,0 +1,24 @@
+.A-footerFoot__chat{
+    background-color:var(--yellow);
+    background-image: url(../img/charla.svg);
+    margin-left: 55vw;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 50px;
+    top: -50%;
+    position: absolute;
+           
+    
+}
+
+.O-footer{
+    background: var(--light-grey);
+    height:5vw;
+    width: 63vw;
+    position: fixed;
+    display: flex;
+    bottom: 0px;
+   
+    
+
+}
