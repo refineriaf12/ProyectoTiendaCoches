@@ -1,6 +1,28 @@
-.A-form_input{
+.A-form_input, .-shadow{
     background-color: white;
     padding: 0.5vw 1vw;
     border:none;
     box-shadow: none;
+    margin-bottom: 10px;
+    
+}
+.M-form{ 
+    display:flex;
+    flex-direction:column;
+    color:var(--blood-orange);
+    padding:1.5vw 1.5vw;
+    
+
+}
+
+.O-form{
+    background: var(--light-grey);
+    padding: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    max-width: 350px;
+      
+    
+
 }
