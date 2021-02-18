@@ -1,0 +1,62 @@
+[
+    {
+        "carBrand": "Ford",
+        "carModel": "Kuga",
+        "leasingPrice": 33,
+        "carImage": "/img/bmw.jpg",
+        "seatsNumber": 5,
+        "doorNumber": 5,
+        "trunkSize": 406,
+        "co2Emissions": "115",
+        "carType": "Grande",
+        "airConditioner": "yes",
+        "transmissionType": "Manual",
+        "motorType": "Diesel",
+        "availability": "yes"
+    },
+    {
+        "carBrand": "Citroen",
+        "carModel": "C4",
+        "leasingPrice": 26,
+        "carImage": "/img/bmw.jpg",
+        "seatsNumber": 5,
+        "doorNumber": 5,
+        "trunkSize": 380,
+        "co2Emissions": "108" ,
+        "carType": "Mediano",
+        "airConditioner": "yes",
+        "transmissionType": "Automático",
+        "motorType": "Gasolina",
+        "availability": "yes"
+    },
+    {
+        "carBrand": "Peugeot",
+        "carModel": "2008",
+        "leasingPrice": 40,
+        "carImage": "/img/bmw.jpg",
+        "seatsNumber": 5,
+        "doorNumber": 4,
+        "trunkSize": 450,
+        "co2Emissions": "110",
+        "carType": "Grande",
+        "airConditioner": "Si",
+        "transmissionType": "Automático",
+        "motorType": "Gasolina",
+        "availability": "si"
+    },
+    {
+        "carBrand":"Renault",
+        "carModel":"Megane",
+        "leasingPrice":33,
+        "carImage":"/img/bmw.jpg",
+        "seatsNumber":5,
+        "doorNumber":4,
+        "trunkSize":2000,
+        "co2Emissions":"110",
+        "carType":"Mediano",
+        "airConditioner":"Si",
+        "transmissionType":"Manual",
+        "motorType": "Gasolina",
+        "availability": "si"
+    }
+]

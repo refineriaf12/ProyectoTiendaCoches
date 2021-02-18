@@ -1,0 +1,14 @@
+<section>
+    
+        {{#each cars}}
+            <ul>
+                <a href="/rentalCars/detail/{{_id}}">
+                    <li><img src="{{carImage}}" alt="Car image"></li>
+                    <li>Marca: {{carBrand}}</li>
+                    <li>Modelo: {{carModel}}</li>
+                    <li>Tipo: {{carType}}</li>
+                </a>
+            </ul>
+        {{/each}}
+  
+</section>
