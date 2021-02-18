@@ -7,7 +7,7 @@ const Email = require('../../models/emailModel');
 const emailController = {
     
     showFormToSendEmail: (req, res) => {
-        res.render('templates/formComplainTemplate', { formComplain:input.formComplain, sendMessage: false });
+        res.render('templates/quality/formComplainTemplate', { formComplain:input.formComplain, sendMessage: false });
     },
 
     postEmail: async (req, res) => {
@@ -33,8 +33,8 @@ const emailController = {
             port: '587',
             secure: false,
             auth: {
-                user: 'ottis.braun@ethereal.email',
-                pass: 'DeXYXeHkpEzrFzwtUa'
+                user: 'horacio.vandervort35@ethereal.email',
+                pass: 'fpr3j4WqXVasKbkC3a'
             }
         });
 
@@ -47,7 +47,7 @@ const emailController = {
         });
 
         console.log('Message sent', info.messageId);
-        res.render('templates/formComplainTemplate', { sendMessage: true });
+        res.render('templates/quality/formComplainTemplate', { sendMessage: true });
     }
 };
 
