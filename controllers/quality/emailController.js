@@ -7,7 +7,7 @@ const Email = require('../../models/emailModel');
 const emailController = {
     
     showFormToSendEmail: (req, res) => {
-        res.render('templates/quality/formComplainTemplate', { formComplain:input.formComplain, sendMessage: false });
+        res.render('templates/quality/form_complain', { formComplain:input.formComplain, sendMessage: false });
     },
 
     postEmail: async (req, res) => {
@@ -47,7 +47,7 @@ const emailController = {
         });
 
         console.log('Message sent', info.messageId);
-        res.render('templates/quality/formComplainTemplate', { sendMessage: true });
+        res.render('templates/quality/form_complain', { sendMessage: true });
     }
 };
 

@@ -4,14 +4,14 @@ const input = require('../data/input.json')
 
 
 router.get("/", (req, res) => {
-    res.render("templates/home");
+    res.render("templates/home/home");
 });
 
 router.get("/login", (req, res) => {
-    res.render("templates/login", {atomList:input.formLogin});
+    res.render("templates/home/login", {atomList:input.formLogin});
 });
 router.get("/register", (req, res) => {
-    res.render("templates/register", {atomList:input.formRegister});
+    res.render("templates/home/register", {atomList:input.formRegister});
 });
 
 

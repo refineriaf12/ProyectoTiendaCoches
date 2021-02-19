@@ -6,7 +6,7 @@ const input = require('../../data/input.json');
 const CarController = {};
 
 CarController.formCreateCar = (req,res) => {
-    res.render('templates/leasing/newCarForm', {atomList:input.newCarForm});
+    res.render('templates/leasing/car_new', {atomList:input.newCarForm});
 }
 
 CarController.createNewCar = async (req, res) => {
@@ -16,15 +16,15 @@ CarController.createNewCar = async (req, res) => {
 };
 
 CarController.showOneCar = async (req, res) => {
-    res.render('templates/Leasing/carDetailTemplate', await getSingleCar(req.params.id));
+    res.render('templates/Leasing/car_detail', await getSingleCar(req.params.id));
 };
 
 CarController.showAllCars = async (req, res) => {
-   res.render('templates/leasing/allCars', {cars: await getAllCars()});
+   res.render('templates/leasing/car_list', {cars: await getAllCars()});
 };
 
 CarController.formEditCar = async (req,res) => {
-    res.render('templates/leasing/editCarForm', await getSingleCar(req.params.id));
+    res.render('templates/leasing/car_edit', await getSingleCar(req.params.id));
 }
 CarController.updateCar = async (req, res) => {
     const id = req.params.id;

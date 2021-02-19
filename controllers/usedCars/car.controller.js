@@ -5,7 +5,7 @@ const Car = require('../../models/usedCars');
 const carController = {};
 
 carController.formCreateUsedCar = (req, res) => { 
-    res.render('templates/usedCars/formUsedCar',{formNewUsedCars:input.formNewUsedCars})  
+    res.render('templates/usedCars/car_new',{formNewUsedCars:input.formNewUsedCars})  
 };
 carController.createUsedCar = async (req, res) =>{ 
     let {carBrand, carModel, modelYear, nextItvDate, sellingPrice, carImage, carColor, seatsNumber, doorNumber, transmissionType, motorType} = req.body; 
@@ -21,7 +21,7 @@ carController.list = async (req,res)=>{
 
     const cars = await Car.find({}).lean();
     console.log(cars);
-    res.render('templates/usedCars/allUsedCarsTemplate',{carList:cars});
+    res.render('templates/usedCars/car_list',{carList:cars});
 };
 
 carController.deleteCar = async (req,res) => { 
@@ -31,12 +31,12 @@ carController.deleteCar = async (req,res) => {
 
 carController.details = async (req, res) =>{
     const car = await Car.findById(req.params.id);
-    res.render('templates/usedCars/usedCarDetails',{car})
+    res.render('templates/usedCars/car_detail',{car})
 };
 
 carController.renderUpdate = async (req,res) => {
     const car = await Car.findById(req.params.id)
-    res.render('templates/usedCars/editCar', car)
+    res.render('templates/usedCars/car_edit', car)
 }
 
 carController.editCar = async (req, res) => {
