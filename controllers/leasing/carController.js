@@ -1,6 +1,6 @@
 'use strict'
 
-const {createCar, getSingleCar, getAllCars, carUpdate, carDelete} = require('./carControllerFunct');
+const {createCar, getSingleCar, getAllCars, carUpdate, carDelete} = require('./carControllerFunctions');
 const input = require('../../data/input.json');
 
 const CarController = {};
