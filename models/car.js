@@ -14,7 +14,7 @@ const carSchema = new Schema({
         type: String,
         required:true
     },
-    nextItvDate: String,
+    nextItvDate: Date,
     sellingPrice: Number,
     costPrice: Number,
     leasingPrice: Number,
@@ -53,6 +53,6 @@ const carSchema = new Schema({
     transactionType: String
 });
 
-
+carSchema.index({carBrand:"text"});
 
 module.exports = model('Car', carSchema, 'cars');
