@@ -5,8 +5,6 @@
   const morgan = require('morgan')
   const port = 8000;
 
-  //llamada a rutas usedCars
-  const usedCarRouter = require('./routes/usedCars/car.routes')
 
   
   require('./database');
@@ -30,16 +28,16 @@
   app.use(express.json());
   app.use(require("./routes/index"))
   //rutas used cars
-  app.use('/usedCars', usedCarRouter);
+  app.use('/usedCars', require('./routes/usedCars/carRouter'));
   //qa
-  app.use(require('./routes/quality/questionRoute'));
-  app.use(require('./routes/quality/emailRoute'));
+  app.use(require('./routes/quality/questionRouter'));
+  app.use(require('./routes/quality/emailRouter'));
   //leasing
-  app.use(require('./routes/leasing/Car.routes'));
+  app.use(require('./routes/leasing/carRouter'));
   //ventas
-  app.use("/newCars",require ("./routes/ventaCocheNuevo/indexRouter"));
-  app.use("/newCars",require ("./routes/ventaCocheNuevo/carRouter"));
-  app.use("/newCars",require("./routes/ventaCocheNuevo/transactionRouter"))
+  app.use("/newCars",require ("./routes/carSale/indexRouter"));
+  app.use("/newCars",require ("./routes/carSale/carRouter"));
+  app.use("/newCars",require("./routes/carSale/transactionRouter"))
 
 
   

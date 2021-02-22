@@ -7,7 +7,7 @@ const questionController = {
     
     showAllQuestions: (req, res) => {
         /* const question = await Question.find().lean(); */
-        res.render('templates/quality/faqsTemplate', { question })
+        res.render('templates/quality/faqs', { question })
         /* res.render('templates/faqsTemplate'); */
     }
 };

@@ -1,0 +1,16 @@
+{{>organisms/nav/navSales}}
+<h1>Detalles de venta</h1>
+
+<section>
+
+        <article>
+            <h2>Venta: {{this._id}}</h2>
+            <p>Fecha de venta: {{this.transactionDate}}</p>
+            <p>Id del producto: <a href="/newCars/carDetail/{{this.carId}}">{{this.carId}}</a></p>
+            <p>Comprador: {{this.userId}}</p>
+            <p>Beneficio de la venta: {{this.benefit}}</p>
+        </article>
+
+</section>
+
+{{>atoms/buttons/button_home}}
