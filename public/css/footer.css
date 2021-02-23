@@ -1,0 +1,5 @@
+footer .-dropdown:hover .-dropdown__content {
+    display: block;
+    position: absolute;
+    top:40vw;
+  }
