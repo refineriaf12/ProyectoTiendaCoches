@@ -1,6 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1612338865913" clover="3.2.0">
-  <project timestamp="1612338865913" name="All files">
-    <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="0" coveredelements="0" complexity="0" loc="0" ncloc="0" packages="0" files="0" classes="0"/>
+<coverage generated="1614249816520" clover="3.2.0">
+  <project timestamp="1614249816520" name="All files">
+    <metrics statements="48" coveredstatements="46" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="1" elements="53" coveredelements="49" complexity="0" loc="48" ncloc="48" packages="4" files="6" classes="6"/>
+    <package name="src">
+      <metrics statements="15" coveredstatements="15" conditionals="2" coveredconditionals="2" methods="0" coveredmethods="0"/>
+      <file name="server.js" path="C:\Users\nench\Escritorio\Repositorios\ProyectoTiendaCoches\src\server.js">
+        <metrics statements="15" coveredstatements="15" conditionals="2" coveredconditionals="2" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="11" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.controllers_4_Quality">
+      <metrics statements="19" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+      <file name="emailController.js" path="C:\Users\nench\Escritorio\Repositorios\ProyectoTiendaCoches\src\controllers_4_Quality\emailController.js">
+        <metrics statements="14" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="42" count="2" type="stmt"/>
+        <line num="49" count="2" type="stmt"/>
+        <line num="50" count="2" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+      </file>
+      <file name="questionController.js" path="C:\Users\nench\Escritorio\Repositorios\ProyectoTiendaCoches\src\controllers_4_Quality\questionController.js">
+        <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.models">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="emailModel.js" path="C:\Users\nench\Escritorio\Repositorios\ProyectoTiendaCoches\src\models\emailModel.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.routes_4_Quality">
+      <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="emailRoute.js" path="C:\Users\nench\Escritorio\Repositorios\ProyectoTiendaCoches\src\routes_4_Quality\emailRoute.js">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+      <file name="questionRoute.js" path="C:\Users\nench\Escritorio\Repositorios\ProyectoTiendaCoches\src\routes_4_Quality\questionRoute.js">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>
