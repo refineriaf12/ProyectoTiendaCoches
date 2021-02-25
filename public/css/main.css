@@ -3,6 +3,7 @@
 @import url("slider.css");
 @import url("forms.css");
 @import url("styleComplainAndFaqSection.css");
+@import url('./UsedCars/slider_used_cars.css');
 
 *{
     font-family: 'Montserrat', sans-serif;
