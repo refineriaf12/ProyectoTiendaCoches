@@ -6,7 +6,8 @@
 <main class="mainUsedCars">
     <section class="carsList">
         {{#each carList}}
-            <figure><img src="{{carImage}}" alt=""></figure>
+        <article class="usedCars_list-cars_article">
+            <figure class="usedCars_list-cars_figure"><img src="{{carImage}}" alt=""></figure>
             <ul>    
                 <li>Marca: {{carBrand}}</li>
                 <li>Modelo: {{carModel}}</li>
@@ -19,10 +20,14 @@
                 <form action="/usedCars/delete/{{_id}}" method="GET">
                     <input type="submit" value="Borrar">
                 </form>
+                <form action="#" method="GET">
+                    <input type="submit" value="Chat">
+                </form>
                 <form action="/usedCars/details/{{_id}}" method="GET">
                     <input type="submit" value="Detalles">
                 </form>
             </ul>
+        </article>
         {{/each}}
     </section>
 </main>

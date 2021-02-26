@@ -1,0 +1,17 @@
+.usedCars_detail-cars_article{
+    width: 50%;
+    height: 50%;
+   border: solid 2px;
+};
+
+.usedCars_detail-cars_figure{
+        display: none;
+        width: 50%;
+        height: 100%;
+    }
+    .usedCars_detail-cars_figure img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }

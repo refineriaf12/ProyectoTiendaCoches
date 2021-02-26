@@ -31,7 +31,7 @@ carController.deleteCar = async (req,res) => {
 };
 
 carController.details = async (req, res) =>{
-    const car = await Car.findById(req.params.id);
+    const car = await Car.findById(req.params.id).lean();
     res.render('templates/usedCars/car_detail',{car})
 };
 
