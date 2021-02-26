@@ -4,6 +4,7 @@
 @import url("forms.css");
 @import url("styleComplainAndFaqSection.css");
 @import url("footer.css");
+@import url("carList.css");
 
 *{
     font-family: 'Montserrat', sans-serif;
@@ -116,15 +117,5 @@
 .-dropdown:hover .-dropdown__content {
   display: block;
   position: absolute;
-  top: 2.5vw;
+  top: 2.25vw;
 }
-
-
-
-
-
-
-
-
-
-

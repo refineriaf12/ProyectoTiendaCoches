@@ -21,7 +21,7 @@
     height: 5vh;
     width: 40vw;
     margin: 2vh auto;
-    border: var(--border)
+    /* border: var(--border) */
 }
 
 .container__form__complain form textarea{
@@ -29,7 +29,7 @@
     height: 20vh;
     width: 40vw;
     margin: 2vh auto;
-    border: var(--border)
+    /* border: var(--border) */
 }
 
 .button__submit_complain{
