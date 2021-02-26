@@ -13,7 +13,7 @@ describe('Model Test', () => {
 
     describe('Second Used Cars Model Test', () => {
 
-        it('Create and save users successfully', async () => {
+        it('Create and save cars successfully', async () => {
             const validCar = new UsedCars(carData);         // creamos el objeto
             const savedUsedCar = await validCar.save();     // lo guardamos en la bdd
 
