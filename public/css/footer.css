@@ -1,5 +1,9 @@
-footer .-dropdown:hover .-dropdown__content {
+/* footer .-dropdown:hover .-dropdown__content {
     display: block;
     position: absolute;
     top:40vw;
+  } */
+
+  footer img{
+    width: 2vw;
   }
