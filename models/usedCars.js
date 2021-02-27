@@ -9,7 +9,7 @@ const carSchema = new Schema({
             required:true},
 
     modelYear: {type: String,
-            required:false},
+            required:true},
 
     nextItvDate: String,
 

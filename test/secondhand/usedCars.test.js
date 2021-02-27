@@ -65,7 +65,8 @@ describe('Model Test', () => {
                 err = error
             }
             expect(err).toBeInstanceOf(mongoose.Error.ValidationError)
-            expect(err.errors.gender).toBeDefined();
+            expect(err.errors.carModel).toBeDefined();
+            expect(err.errors.modelYear).toBeDefined();
             done();
 
         });
