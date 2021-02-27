@@ -14,6 +14,7 @@ describe('Model Test', () => {
     describe('Second Used Cars Model Test', () => {
 
         //Conexión a base de datos en memoria para test
+        //Daba fallo de respuesta de callback, era porque habia que añadir este beforeAll de manera que se conecta a la base de datos y genera el mongodbmemoryserver y ya recibe respuesta
         beforeAll(async (done) => {
             await mongoose.connect("mongodb://localhost/webcoches", { useNewUrlParser: true, useCreateIndex: true }, (err) => {
                 if (err) {
@@ -23,7 +24,7 @@ describe('Model Test', () => {
             });
             done();
         });
-
+        //Este test comprueba que coincidan los campos del coche que quiere guardar con el guardado en la base de datos.
         it('Crear y guardar coche correctamente', async (done) => {
             const validCar = new UsedCarModel(carData);         // creamos el objeto
             const savedUsedCar = await validCar.save();     // lo guardamos en la bdd
@@ -44,17 +45,18 @@ describe('Model Test', () => {
 
         });
 
-        //Test Schema esta funcionando
+        //Test Schema esta funcionando, se pasa
         it('Insertar UsedCar correctamente, pero el campo no definido en el esquema debe dar undefined', async (done)=>{
-            const carWithInvalidField = new UsedCarModel(carData);
+            const carWithInvalidField = new UsedCarModel({ carBrand: 'Renault', carModel:'Megane', modelYear:2007 });
             const savedCarWithInvalidField = await carWithInvalidField.save();
 
             expect(savedCarWithInvalidField._id).toBeDefined();
-            expect(savedCarWithInvalidField.carBBrand).toBeUndefined(); //Escribo el cambo carBBrand mal a proposito para comprobar que da fallo.
+            expect(savedCarWithInvalidField.carBBrand).toBeUndefined();
+            //Escribo el campo carBBrand mal a proposito para comprobar que da fallo.
             done();
 
         })
-
+        //No se pasan todos los campos required para comprobar da error.
         it('Crear un coche sin un campo requerido tiene que fallar', async (done) => {
             const carWithoutRequiredField = new UsedCarModel({ carBrand: 'Renault' });
             let err;
@@ -72,7 +74,7 @@ describe('Model Test', () => {
         });
 
         afterAll(done => {
-            // Closing the DB connection allows Jest to exit successfully.
+            // Cerramos la base de datos para permitir que jest finalice.
             mongoose.connection.close()
             done();
         })
