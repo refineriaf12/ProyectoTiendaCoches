@@ -16,7 +16,10 @@ describe('Model Test', () => {
         //Conexión a base de datos en memoria para test
         //Daba fallo de respuesta de callback, era porque habia que añadir este beforeAll de manera que se conecta a la base de datos y genera el mongodbmemoryserver y ya recibe respuesta
         beforeAll(async (done) => {
-            await mongoose.connect("mongodb://localhost/webcoches", { useNewUrlParser: true, useCreateIndex: true }, (err) => {
+            await mongoose.connect("mongodb://localhost/webcoches", {
+                useNewUrlParser: true,
+                useCreateIndex: true,
+                useUnifiedTopology: true }, (err) => {
                 if (err) {
                     console.error(err);
                     process.exit(1);
