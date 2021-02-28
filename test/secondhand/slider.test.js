@@ -55,12 +55,6 @@ describe('Slider functions test', () =>{
 
 afterAll(async () => {
 
-    const collections = await mongoose.connection.collections;
-
-    for (const key in collections) {
-        const collection = collections[key];
-        await collection.deleteMany();
-    }
     await mongo.stop();
     await mongoose.connection.close()
 
