@@ -60,4 +60,4 @@ const arrayAd = async () =>{
 };
 
 //  imprimir(arrayAd());
-module.exports = {findAllCars, carsLength, generarRamdon, arrayAd};
+module.exports = {findAllCars, carsLength, generarRamdon, generoArray3Ramdon, arrayAd};
