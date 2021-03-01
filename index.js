@@ -29,7 +29,6 @@
   app.use(require("./routes/index"))
   //rutas used cars
   app.use('/usedCars', require('./routes/usedCars/carRouter'));
-  app.use('/membership', require('./routes/usedCars/membershipRouter'))
   //qa
   app.use(require('./routes/quality/questionRouter'));
   app.use(require('./routes/quality/emailRouter'));

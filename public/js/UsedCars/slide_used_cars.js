@@ -1,5 +1,5 @@
 'use strict'
-//require('../../../database')
+// require('../../../database')
 const Cars = require("../../../models/usedCars");
 
 const imprimir = async (func) => {
@@ -13,19 +13,19 @@ const findAllCars = async () => {
      return allCars
 };
 
-// imprimir(findAllCars());
+// imprimir(findAllCars()); 
 
 //Después necesitaremos generar 3 números aleatorios entre 0 y la longitud del array -1
 const carsLength = async () => {
-    const allCars = await findAllCars;
-    const carsLength = Object.keys(allCars).length
+    const allCars = await findAllCars();
+    const carsLength = Object.keys(allCars).length;
     return carsLength
 };
 
 // imprimir(carsLength());
 
 const generarRamdon = async () => {
-    const limit = await carsLength() || 3;
+    const limit = await carsLength();
     const num = Math.floor(Math.random()*limit);
     return num;
 };
@@ -60,4 +60,4 @@ const arrayAd = async () =>{
 };
 
 //  imprimir(arrayAd());
-module.exports = {findAllCars, carsLength, generarRamdon, generoArray3Ramdon, arrayAd};
+module.exports = {findAllCars, carsLength,arrayAd};
