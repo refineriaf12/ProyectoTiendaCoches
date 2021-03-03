@@ -16,8 +16,9 @@ router.get("/login", (req, res) => {
 router.get("/register", (req, res) => {
     res.render("templates/home/register", {atomList:input.formRegister});
 });
-
-
+router.get("/profile", (req, res) => {
+    res.render("templates/home/profile");
+});
 
 
 

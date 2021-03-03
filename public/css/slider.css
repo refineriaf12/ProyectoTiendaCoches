@@ -43,11 +43,16 @@
 }
 
 .A-listSlider__carImage{
-    width: 100%;
+    width: 15vw;
+    height: 10vw;
+    overflow: hidden;
+    margin-bottom: 1vw;
+    display: inline-flex;
+    justify-content:center;
 }
 .A-listSlider__carImage img{
-    width: 100%;
-    margin-bottom: 1vw;
+    object-fit:fill;
+    height:100%;
 }
 
 .A-listSlider__carDescription{

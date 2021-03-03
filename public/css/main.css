@@ -11,6 +11,10 @@
     font-size: 1vw;
     color: var(--black);
 }
+body {
+  margin-bottom: 3vw;
+}
+
 :root{
     --grey: #8c8c8c;
     --light-grey: #bfbfbf;
@@ -117,5 +121,5 @@
 .-dropdown:hover .-dropdown__content {
   display: block;
   position: absolute;
-  top: 2.25vw;
+  top: 2.55vw;
 }
