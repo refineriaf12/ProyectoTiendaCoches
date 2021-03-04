@@ -4,17 +4,12 @@
 const passport = require('passport');
 
 const User = require('../../models/user');
-const userCtrl = {};
 
-userCtrl.signin = passport.authenticate('local', {
-    failureRedirect: '/login',
-    successRedirect: '/home',
-    // failureFlash: true
-})
+
 
 const input = require('../../data/input.json')
 
-const usersController = {
+const userController = {
 
     showLoginSignup: (request,response) => {
         response.render("templates/home/register", {atomList:input.formRegister});
@@ -32,20 +27,27 @@ const usersController = {
     },
 
     // loginSignUp: async (request, response) => {
-    //     const {userName, password} = req.body;
+    //     const {userName, password} = request.body;
     //     const userNameUser = await User.find({userName});
     //     const passwordUser = await User.find({password});
 
     //     if(userName != userNameUser ){
-    //         response.redirect ('/login', {userNameinvalid: true});
+    //         response.redirect ('/login');
+    //         // , {userNameinvalid: true}
     //     }
     //     if( password != passwordUser){
-    //         response.redirect('/login', {passwordInvalid: true});
+    //         response.redirect('/login');
+    //         // , {passwordInvalid: true}
     //     }
 
-    //     response.redirect('/home');
+    //     response.redirect('/');
     // },
 
+    signin: passport.authenticate('local', {
+        failureRedirect: '/login',
+        successRedirect: '/home',
+        // failureFlash: true
+    }),
     
     
     logout: (request, response) => {
@@ -54,14 +56,7 @@ const usersController = {
     }
 };
 
-module.exports = usersController;
-
-
-
-
-
-
-
+module.exports = userController;
 
 
 

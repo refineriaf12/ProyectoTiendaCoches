@@ -7,7 +7,7 @@ const User = require('../models/user');
 
 passport.use( new LocalStrategy({
     usernameField: 'userName',
-    passwordField: 'password'
+    passwordField: 'password',
 }, async (userName, password, done) => {
     //confirmamos que el username existe en la base de datos
     const user = await User.findOne({userName})

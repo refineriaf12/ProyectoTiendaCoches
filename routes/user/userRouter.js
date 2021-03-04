@@ -2,26 +2,16 @@
 
 const { Router } = require('express');
 const router = Router();
-const {signin} = require ('../../controllers/user/userController');
+const userController = require ('../../controllers/user/userController');
 
-const usersController = require ('../../controllers/user/userController');
 
-// router.get('/login', usersController.showLoginSignup);
-// router.post('/usersSave',usersController.createNewUser);
+router.get('/login', userController.userLogin);
+router.post('/login', userController.signin);
+// router.post('/login', usersController.loginSignUp);
 
-// router.get('/users/signin', usersController.userLogin);
-// router.post('/users/signin', usersController.signin);
+router.get('/register', userController.showLoginSignup);
+router.post('/register', userController.createNewUser);
 
-// router.post('/users/signup', usersController.loginSignUp);
-
-// router.get('/users/logout', usersController.logout);
-
-router.get('/login', usersController.userLogin);
-router.post('/login', function(req,res){signin});
-
-router.get('/register', usersController.showLoginSignup);
-router.post('/register', usersController.createNewUser);
-
-router.get('/logout', usersController.logout);
+router.get('/logout', userController.logout);
 
 module.exports = router;
