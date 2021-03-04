@@ -1,10 +1,13 @@
 const membership = require('../../models/Membership');
 const membershipHandlers = require('./membershipHandlers');
 
+const userReserva= {_id:1, name: 'Paco', surname: 'Martinez', dniNumber: 77777, userName: 'El Paco' ,password: 123,
+email: "cqqq", membership: 'Free', membershipExpirationDate: '01/01/01'};
 
 module.exports = {
-    formCreateMembership: (req, res) =>{
-        res.render('templates/usedCars/membership/membershipForm')
+    formCreateMembership:  (req, res) =>{
+        const user = userReserva;
+        res.render('templates/usedCars/membership/membershipForm',{user})
     },
 
     createMembership: (req, res) =>{

@@ -4,6 +4,7 @@
 @import url("forms.css");
 @import url("styleComplainAndFaqSection.css");
 @import url('./UsedCars/usedCars.css');
+@import url('./UsedCars/membershipForm.css');
 
 *{
     font-family: 'Montserrat', sans-serif;
