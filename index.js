@@ -3,6 +3,7 @@
   const app = express();
   const handlebars = require('express-handlebars');
   const morgan = require('morgan')
+  const passport = require('passport')
   const port = 8000;
 
 
@@ -23,10 +24,13 @@
 
 
   
+  app.use(morgan('dev'));
   app.use(express.static("public"));
   app.use(express.urlencoded({extended:false}));
   app.use(express.json());
-  app.use(morgan('dev'));
+  app.use(passport.initialize());
+  app.use(passport.session());
+
   app.use(require("./routes/index"));
   app.use(require('./routes/user/userRouter'));
   //rutas used cars
