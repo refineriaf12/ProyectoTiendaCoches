@@ -5,16 +5,16 @@
             "type":"text",
             "placeholder":"Usuario",
             "modifier":"-borderColorBloodOrange",
-            "id":"usernameLogin",
-            "name":"usernameLogin",
+            "id":"userName",
+            "name":"userName",
             "required":true
         },
         {
             "type":"password",
             "placeholder":"Contraseña",
             "modifier":"-borderColorBloodOrange",
-            "id":"passwordLogin",
-            "name":"passwordLogin",
+            "id":"password",
+            "name":"password",
             "required":true
         },
         {
@@ -29,8 +29,8 @@
             "type":"text",
             "placeholder":"Nombre",
             "modifier":"-borderColorBloodOrange",
-            "id":"nameRegister",
-            "name":"nameRegister",
+            "id":"name",
+            "name":"name",
             "value":"",
             "required":true
         },
@@ -38,8 +38,8 @@
             "type":"text",
             "placeholder":"Apellido",
             "modifier":"-borderColorBloodOrange",
-            "id":"surnameRegister",
-            "name":"surnameRegister",
+            "id":"surname",
+            "name":"surname",
             "value":"",
             "required":true
         },
@@ -47,8 +47,8 @@
             "type":"text",
             "placeholder":"numero de DNI",
             "modifier":"-borderColorBloodOrange",
-            "id":"dniRegister",
-            "name":"dniRegister",
+            "id":"dniNumber",
+            "name":"dniNumber",
             "value":"",
             "required":true
         },
@@ -56,8 +56,8 @@
             "type":"text",
             "placeholder":"Usuario",
             "modifier":"-borderColorBloodOrange",
-            "id":"usernameRegister",
-            "name":"usernameRegister",
+            "id":"userName",
+            "name":"userName",
             "value":"",
             "required":true
         },
@@ -65,8 +65,8 @@
             "type":"password",
             "placeholder":"Contraseña",
             "modifier":"-borderColorBloodOrange",
-            "id":"passwordRegister",
-            "name":"passwordRegister",
+            "id":"passwordr",
+            "name":"password",
             "value":"",
             "required":true
         },
@@ -74,8 +74,8 @@
             "type":"email",
             "placeholder":"Email",
             "modifier":"-borderColorBloodOrange",
-            "id":"emailRegister",
-            "name":"emailRegister",
+            "id":"email",
+            "name":"email",
             "value":"",
             "required":true
         },
@@ -83,8 +83,8 @@
             "type":"url",
             "placeholder":"Avatar",
             "modifier":"-borderColorBloodOrange",
-            "id":"avatarRegister",
-            "name":"avatarRegister",
+            "id":"avatar",
+            "name":"avatar",
             "value":"",
             "required":false
         },

@@ -1,26 +1,34 @@
 'use strict'
 
+
 const passport = require('passport');
 
 const User = require('../../models/user');
+const userCtrl = {};
 
-const 
+userCtrl.signin = passport.authenticate('local', {
+    failureRedirect: '/login',
+    successRedirect: '/home',
+    // failureFlash: true
+})
+
+const input = require('../../data/input.json')
 
 const usersController = {
 
     showLoginSignup: (request,response) => {
-        res.render("templates/home/register", {atomList:input.formRegister});
+        response.render("templates/home/register", {atomList:input.formRegister});
     },
 
     createNewUser: async (request,response) => {
-        const {name,surname,dniNumber,userName,email,password} = req.body;
+        const {name,surname,dniNumber,userName,email,password} = request.body;
         const newUser = new User ({name,surname,dniNumber,userName,email,password});
         await newUser.save();
-        res.redirect("/login");
+        response.redirect("/login");
     },
 
     userLogin:(request, response) =>{
-        res.render("templates/home/login", {atomList:input.formLogin});
+        response.render("templates/home/login", {atomList:input.formLogin});
     },
 
     // loginSignUp: async (request, response) => {
@@ -38,11 +46,7 @@ const usersController = {
     //     response.redirect('/home');
     // },
 
-    signin: passport.authenticate('local', {
-            failureRedirect: '/login',
-            successRedirect: '/home',
-            // failureFlash: true
-    }),
+    
     
     logout: (request, response) => {
         request.logout();

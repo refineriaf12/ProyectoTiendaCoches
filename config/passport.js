@@ -3,14 +3,14 @@
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 
-const User = require('../models/User');
+const User = require('../models/user');
 
 passport.use( new LocalStrategy({
-    usernameField: 'username',
+    usernameField: 'userName',
     passwordField: 'password'
-}, async (username, password, done) => {
+}, async (userName, password, done) => {
     //confirmamos que el username existe en la base de datos
-    const user = await User.findOne({username})
+    const user = await User.findOne({userName})
     if (!user) {
         return done(null, false, { message: 'El usuario no existe.'});
     } else {

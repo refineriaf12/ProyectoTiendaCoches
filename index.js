@@ -9,6 +9,8 @@
 
   
   require('./database');
+  require('./config/passport');
+
   
   app.engine(
       "hbs",
