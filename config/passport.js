@@ -7,19 +7,22 @@ const User = require('../models/user');
 
 passport.use( new LocalStrategy({
     usernameField: 'userName',
-    passwordField: 'password',
+    passwordField: 'password'
 }, async (userName, password, done) => {
     //confirmamos que el username existe en la base de datos
-    const user = await User.findOne({userName})
+    const user = await User.findOne({userName});
+    const pass = await User.findOne({password});
     if (!user) {
-        return done(null, false, { message: 'El usuario no existe.'});
+        // redirect ('/login', {userNameInvalid: true});
+        return done(null, false, {userNameInvalid: true});
     } else {
         //Comprobamos si la contraseña es correcta
-        const match = await user.matchPassword(password);
-        if (match) {
+        if (pass) {
             return done(null, user)
+
         } else {
-            return done(null, false, {message: 'Contraseña incorrecta'});
+            // redirect('/login',{passwordInvalid: true});
+            return done(null, false, {passwordInvalid: true});
         }
     }
 }));

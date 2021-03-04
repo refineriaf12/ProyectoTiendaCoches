@@ -1,4 +1,10 @@
 <form action="/login" method="POST" class="M-form">
+    {{#if userNameInvalid}}
+        <p>Usuario incorrecto</p>
+    {{/if}}
+    {{#if passwordInvalid}}
+        <p>Contraseña incorrecta</p>
+    {{/if}}
     {{#each atomList}}
         {{>atoms/forms/input}}
     {{/each}}

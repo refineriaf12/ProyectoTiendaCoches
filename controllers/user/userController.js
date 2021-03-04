@@ -32,12 +32,10 @@ const userController = {
     //     const passwordUser = await User.find({password});
 
     //     if(userName != userNameUser ){
-    //         response.redirect ('/login');
-    //         // , {userNameinvalid: true}
+    //         response.redirect ('/login', {userNameinvalid: true});
     //     }
     //     if( password != passwordUser){
-    //         response.redirect('/login');
-    //         // , {passwordInvalid: true}
+    //         response.redirect('/login',{passwordInvalid: true});
     //     }
 
     //     response.redirect('/');
@@ -45,7 +43,7 @@ const userController = {
 
     signin: passport.authenticate('local', {
         failureRedirect: '/login',
-        successRedirect: '/home',
+        successRedirect: '/'
         // failureFlash: true
     }),
     
