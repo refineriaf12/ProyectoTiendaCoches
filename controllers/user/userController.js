@@ -7,44 +7,44 @@ const User = require('../../models/user');
 const usersController = {
 
     showLoginSignup: (request,response) => {
-        response.send('nos devolvería un formulario de registro');
+        res.render("templates/home/register", {atomList:input.formRegister});
     },
 
     createNewUser: async (request,response) => {
         const {name,surname,dniNumber,userName,email,password} = req.body;
         const newUser = new User ({name,surname,dniNumber,userName,email,password});
         await newUser.save();
-        response.send ('formulario enviado-hay que crear el parcial');
+        res.redirect("/login");
     },
 
-    userLogin:(request, rersponse) =>{
-        response.send('formulario login usuario existente');
+    userLogin:(request, response) =>{
+        res.render("templates/home/login", {atomList:input.formLogin});
     },
 
-    loginSignUp: async (request, response) => {
-        const {userName, password} = req.body;
-        const userNameUser = await User.find({userName});
-        const passwordUser = await User.find({password});
+    // loginSignUp: async (request, response) => {
+    //     const {userName, password} = req.body;
+    //     const userNameUser = await User.find({userName});
+    //     const passwordUser = await User.find({password});
 
-        if(userName != userNameUser ){
-            response.redirect ('formulario login usuario existente', {userNameinvalid: true});
-        }
-        if( password != passwordUser){
-            response.redirect('formulario login usuario existente', {passwordInvalid: true});
-        }
+    //     if(userName != userNameUser ){
+    //         response.redirect ('/login', {userNameinvalid: true});
+    //     }
+    //     if( password != passwordUser){
+    //         response.redirect('/login', {passwordInvalid: true});
+    //     }
 
-        response.send('usuario logeado');
-    },
+    //     response.redirect('/home');
+    // },
 
     signin: passport.authenticate('local', {
-            failureRedirect: '/users/signin',
-            successRedirect: '/faqs',
-            failureFlash: true
+            failureRedirect: '/login',
+            successRedirect: '/home',
+            // failureFlash: true
     }),
     
     logout: (request, response) => {
         request.logout();
-        response.redirect('formulario de acceso')
+        response.redirect('/login')
     }
 };
 

@@ -26,7 +26,8 @@
   app.use(express.static("public"));
   app.use(express.urlencoded({extended:false}));
   app.use(express.json());
-  app.use(require("./routes/index"))
+  app.use(morgan('dev'));
+  app.use(require("./routes/index"));
   app.use(require('./routes/user/userRouter'));
   //rutas used cars
   app.use('/usedCars', require('./routes/usedCars/carRouter'));

@@ -5,11 +5,25 @@ const router = Router();
 
 const usersController = require ('../../controllers/user/userController');
 
-router.get('/users/newUser', usersController.showLoginSignup);
-router.post('/usersSave',usersController.createNewUser);
-router.get('/users/signin', usersController.userLogin);
-router.post('/users/signin', usersController.signin);
-router.post('/users/signup', usersController.loginSignUp);
-router.get('/users/logout', usersController.logout);
+// router.get('/login', usersController.showLoginSignup);
+// router.post('/usersSave',usersController.createNewUser);
+
+// router.get('/users/signin', usersController.userLogin);
+// router.post('/users/signin', usersController.signin);
+
+// router.post('/users/signup', usersController.loginSignUp);
+
+// router.get('/users/logout', usersController.logout);
+
+
+
+
+router.get('/login', usersController.userLogin);
+router.post('/login', usersController.singin);
+
+router.get('/register', usersController.showLoginSignup);
+router.post('/register', usersController.createNewUser);
+
+router.get('/logout', usersController.logout);
 
 module.exports = router;

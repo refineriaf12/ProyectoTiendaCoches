@@ -8,6 +8,6 @@ mongoose.connect(MONGODB_URI,{
     useFindAndModify: false,
     
 })
-.then((db)=> console.log("Conectado"))
-.catch((err)=> console.error(err));
+.then(db => console.log("Conectado"))
+.catch(err => console.error(err));
 
