@@ -32,7 +32,7 @@ describe('Slider functions test', () =>{
         expect(allCars.length).toBe(3);
     });
 
-    it.skip('La función carLength debe devolver 3', async () =>{
+    it('La función carLength debe devolver 3', async () =>{
         console.log( await UsedCarModel.find().lean());
         expect(await carsLength()).toBe(3);
     });
@@ -63,5 +63,5 @@ afterAll(async () => {
 
 
 
-    
-    
+
+
