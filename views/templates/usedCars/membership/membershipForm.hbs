@@ -1,7 +1,7 @@
 <h1>Membership form</h1>
 
 {{#if user}}
-<form class="usedCars-membershipForm" action="/membership/save">
+<form class="usedCars-membershipForm" action="/membership/save/{{user._id}}" method="POST">
     <fieldset>
         <legend>Usuario</legend>
         <h3> Username: {{user.name}}</h3>
