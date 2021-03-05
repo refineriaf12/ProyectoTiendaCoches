@@ -28,7 +28,7 @@ const userSchema = new Schema({
         required:true
     },
     avatar: String,
-    membership: String,
+    membership: String,//type: String, default: 'Free' }
     membershipExpirationDate: Date,
     leasedCars:{
         type:[Schema.Types.ObjectId]
@@ -37,3 +37,5 @@ const userSchema = new Schema({
 });
 
 module.exports = model('User', userSchema, 'users');
+
+

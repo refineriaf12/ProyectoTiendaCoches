@@ -1,6 +1,14 @@
 <h1>Membership list</h1>
 
+ <section class="membership_list">
 {{#each allMemberships}}
-    <h2>membresia</h2>
-
+    <article>
+        <h1>Membership</h1>
+        <h2>Tipo: {{membershipType}}</h2>
+        <h3>Usuario: {{idUser}}</h3>
+        <div>
+        <a href="/membership/delete/{{_id}}">Delete</a>
+        </div>
+    </article>
 {{/each}}
+</section>
