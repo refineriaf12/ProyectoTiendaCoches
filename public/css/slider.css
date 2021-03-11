@@ -1,0 +1,116 @@
+.O-slider{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 1vw 0;
+}
+
+.O-slider__slides{
+    display: flex;
+    background-color: var(--light-grey);
+    overflow:hidden;
+    padding: 0.5vw 0.5vw;
+    justify-self: center;
+    max-width: 49vw;
+}
+
+.M-slider__listItem{
+    width:15vw;
+    margin: 0.5vw 0.5vw;
+    background-color: white;
+    min-width: 15vw;
+}
+
+.M-slider__button{
+    background-color: var(--grey);
+    border-radius: 50%;
+    height: 3vw;
+    width: 3vw;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 1vw;
+}
+.M-slider__button:hover{
+    transform: scale(1.2);
+}
+.M-slider__button figure{
+    display: inline-flex;
+    width: 1vw;
+    height:1vw;
+    align-self: center;
+}
+
+.A-listSlider__carImage{
+    width: 100%;
+}
+.A-listSlider__carImage img{
+    width: 100%;
+    margin-bottom: 1vw;
+}
+
+.A-listSlider__carDescription{
+    padding: 0 1vw;
+}
+
+.A-priceSlider__link{
+    text-align: center;
+    width: 100%;
+    padding: 0.5vw 1vw;
+    margin-top: 1vw;
+    display:block;
+    text-decoration: none;
+}
+
+.-slide-left {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-15.5vw);
+              transform: translateX(-15.5vw);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-15.5vw);
+              transform: translateX(-15.5vw);
+    }
+  }
+  
+  .-slide-right {
+	-webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(15.5vw);
+              transform: translateX(15.5vw);
+    }
+  }
+  @keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(15.5vw);
+              transform: translateX(15.5vw);
+    }
+  }

@@ -1,0 +1,148 @@
+:root {
+    --text-color: #C2654E;
+    --button-color: #C2654E;
+    --border: 2px solid #C2654E;
+    --container-color: #BFBFBF;
+    --font-style: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--container-color);
+    font-family: var(--font-style);
+}
+
+.container__section__complain{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--container-color)  
+}
+
+.container__form__complain{
+    height: 80vh;
+    background-color: var(--container-color)
+}
+
+.container__form__complain form{
+    display: flex;
+    flex-direction: column;
+}
+
+.container__form__complain form input{
+    padding-left: 1vw;
+    height: 5vh;
+    width: 40vw;
+    margin: 2vh auto;
+    border: var(--border)
+}
+
+.container__form__complain form textarea{
+    padding-left: 1vw;
+    height: 20vh;
+    width: 40vw;
+    margin: 2vh auto;
+    border: var(--border)
+}
+
+.button__submit_complain{
+    background-color: var(--button-color);
+    color: white;
+}
+
+.alert__p__complain {
+    width: 25vw;
+    padding: 3vh;
+    border: var(--border);
+    margin: auto;
+    text-align: center;
+    background-color: indianred;
+}
+
+/* SECTION FAQS */
+
+
+.container__header__faqs {
+    height: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vh;
+}
+
+.container__header__faqs > h1 {
+    font-size: 3rem;
+    padding: 2vh;
+}
+.container__header__faqs > h2 {
+    color: var(--text-color);
+    padding: 2vh;
+}
+.container__header__faqs > h3 {
+    color: var(--text-color);
+    padding: 2vh;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.4s;
+    padding: 2vh 0;
+}
+
+.question-answer_accordion {
+    border-bottom: 1px solid var(--button-color);
+}
+
+.active img {
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in;
+}
+
+.questions_accordion {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.question-answer_accordion > .answer {
+    display: none;
+}
+
+.question img {
+    align-self: center;
+    width: 15px;
+}
+
+.active > .answer {
+    display: block;
+    padding-bottom: 1.3rem;
+} 
+
+.active h4 {
+    color: var(--text-color);
+}
+
+.container__section__faqs {
+    height: 70vh;
+    width: 80vw;
+    margin: auto;
+    margin-top: 9vh;
+}
+
+
+@media (max-width: 767px) {
+    .container__form__complain form input,
+    .container__form__complain form textarea {
+        width: 350px;
+    }
+
+    .alert__p__complain {
+        font-size: 16px;
+        width: 290px;
+    }
+} 

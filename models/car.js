@@ -11,12 +11,15 @@ const carSchema = new Schema({
         required:true
     },
     modelYear: {
-        type: Number,
+        type: String,
         required:true
     },
     nextItvDate: Date,
     sellingPrice: Number,
     costPrice: Number,
+    leasingPrice: Number,
+    leaseDate: Date,
+    leaseReturnDate: Date, 
     carImage: {
         type: String,
         required:true
@@ -34,7 +37,7 @@ const carSchema = new Schema({
         required:true
     },
     trunkSize: Number,
-    co2Emissions: Number,
+    co2Emissions: String,
     carType: String,
     airConditioner: String,
     transmissionType: {

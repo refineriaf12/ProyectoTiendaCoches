@@ -1,25 +1,41 @@
 {
-  "name": "proyectotiendacoches",
+  "name": "ProyectoTiendaCoches",
   "version": "1.0.0",
-  "description": "",
-  "main": "connection.js",
+  "description": "Proyecto de Inicio de compra-venta de coches",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest"
   },
-  "homepage": "https://github.com/G2LosSimples/G2ProyectoTiendaCoches#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/refineriaf12/ProyectoTiendaCoches.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/refineriaf12/ProyectoTiendaCoches/issues"
+  },
+  "homepage": "https://github.com/refineriaf12/ProyectoTiendaCoches#readme",
   "dependencies": {
+    "@shelf/jest-mongodb": "^1.2.3",
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
-<<<<<<< Updated upstream
     "jest": "^26.6.3",
-    "mongoose": "^5.11.14",
-=======
-    "i": "^0.3.6",
+    "mocha": "^8.2.1",
     "mongoose": "^5.11.13",
->>>>>>> Stashed changes
-    "morgan": "^1.10.0"
+    "nanoid": "^3.1.20",
+    "nodemailer": "^6.4.17",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "telegraf": "^4.0.3"
   },
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "dotenv": "^8.2.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7"
+  }
 }

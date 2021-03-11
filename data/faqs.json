@@ -1,0 +1,37 @@
+[
+  {
+  "_id": "60227a5a73e49b4dd0334e64",
+  "question": "¿Como puedo publicar mi anuncio?",
+  "answer": "Si eres un usuario particular, en esta página puedes publicar tu anuncio. Para ello es necesario que te registres introduciendo tu email principal, ya que te enviaremos información sobre tu anuncio y mensajes de personas interesadas en tu coche. Si ya estás registrado, tienes que iniciar sesión para poder acceder al formulario de inserción de anuncio."
+  },
+  {
+  "_id": "60227aaf73e49b4dd0334e65",
+  "question": "¿Como añado fotos a mi anuncio?",
+  "answer": "Una vez que estás en el formulario de inserción, puedes añadir fotografías a tu anuncio de dos formas: arrastrando lasfotografías al rectángulo de inserción de fotografías o pulsando en el botón “Añadir fotos"
+  },
+  {
+  "_id": "60227b1b73e49b4dd0334e66",
+  "question": "¿Como busco los datos tecnicos de mi coche?",
+  "answer": "Si a la hora de insertar tu anuncio te encuentras con que no sabes algunos datos de tu coche o no encuentras la versión exacta, tienes varias opciones:1.Si estás vendiendo un coche nuevo, puedes encontrar los detalles de tu coche en webs especializadas en el mundo del motor como coches.net2.Si tu coche tiene ya unos años, puedes consultar en las fichas técnicas de modelos descatalogados que ofrecen algunas webs especializadas, como Coches.net, o en todo caso contactar con la marca (atención al cliente o departamento de posventa) para que, con el número de bastidor, te faciliten dichos datos.3.Como última opción, puedes recurrir al informe del vehículo que facilita la DGT, previo pago. A partir de un número de matrícula este informe aporta información sobre el número de cargas, número de propietarios, si tiene la ITV al día, créditos sin terminar de pagar… pero pocos datos técnicos."
+  },
+  {
+  "_id": "60227b7373e49b4dd0334e67",
+  "question": "¿Como puedo hacer una venta segura?",
+  "answer": "En Coches.net revisamos los anuncios, pero es importante no bajar la guardia, por este motivo te recomendamos: 1. NO TENGAS EN CUENTA mensajes que te llegan suplantando a coches.net. En ellos, un agente intermediario se ofrece para una venta segura, o te verifican que una transacción es segura. NO OFRECEMOS ESE SERVICIO. Tampoco te pediremos nunca en un email que nos facilites tus claves de acceso. 2. REALIZAR LA Transacción PERSONALMENTE es la mejor opción, es decir, es aconsejable llegar a un acuerdo para poder ver el vehículo antes de la compra. Antes de cerrar la transacción, asegúrate de que el vehículo cumple con lo que esperas de él; así evitarás posibles inconvenientes.3. NO Envíes DINERO a través de Western Unión, MoneyGram, Bidpay u otros tipos de pago similares, ya que no pueden garantizar transacciones con desconocidos y no se puede rastrear el destinatario del envío.4. NO ACEPTES Cheques Bancarios si proceden del extranjero.5. Desconfía de vendedores/compradores que NO pueden hablar por teléfono por cualquier excusa. 6. Te recomendamos que no envíes DINERO como entrada, garantía, gastos de envío o por cualquier otra razón si la transacción la realizas con un particular del que no tienes información. Se han dado casos en los que después de que el comprador hace el pago, desaparece todo rastro de contacto del vendedor.7. Desconfía cuándo el comprador te ofrezca una cantidad superior a la solicitada y te pida que le abones la diferencia."
+  },
+  {
+  "_id": "60227bc473e49b4dd0334e68",
+  "question": "¿Como puedo saber a que precio poner mi coche?",
+  "answer": "Una vez que tienes claro los datos técnicos de tu coche, las características especiales y su estado es el momento de buscar en Internet herramientas de tasación que te pueden dar una idea en general. Pero el paso definitivo para calcular el valor real del coche será buscar otros anuncios de particulares que vendan el mismo modelo en tu zona. En función de su estado o características y de la prisa que tengas por venderlo podrás poner un precio por encima o por debajo de la media.Es aconsejable dejar un margen en el precio para una casi segura negociación con el comprador."
+  },
+  {
+  "_id": "60227bf773e49b4dd0334e69",
+  "question": "¿Como puedo contestar a los compradores interesados en mi anuncio?",
+  "answer": "En coches.net tenemos un chat que puedes usar desde tu navegador o desde nuestra aplicación en tu móvil Android o iOS.Recomendamos que descargues la aplicación y actives las notificaciones para que te enteres rápido de cuándo te contacta otro usuario interesado en tu coche."
+  },
+  {
+  "_id": "60227c2673e49b4dd0334e6a",
+  "question": "¿Como puedo hacer si tengo un problema vendiendo mi coche?",
+  "answer": "En coches.net contamos con un estupendo servicio de atención al cliente.Cualquier duda que tengas, nuestros/as operadores/as te ayudarán en el 902 363 130."
+  }
+]

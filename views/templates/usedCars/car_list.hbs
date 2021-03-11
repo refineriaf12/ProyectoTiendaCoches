@@ -1,0 +1,26 @@
+
+<h1>Catalogo Coches Usados</h1>
+
+<main class="mainUsedCars">
+    <section class="carsList">
+        {{#each carList}}
+            <figure><img src="{{carImage}}" alt=""></figure>
+            <ul>    
+                <li>Marca: {{carBrand}}</li>
+                <li>Modelo: {{carModel}}</li>
+                <li>Año: {{modelYear}}</li>
+                <li>Precio de Venta: {{sellingPrice}}</li>
+                <li>Motor: {{motorType}}</li>
+                <form action="/usedCars/edit/{{_id}}" method="GET">
+                    <input type="submit" value="Editar">
+                </form>
+                <form action="/usedCars/delete/{{_id}}" method="GET">
+                    <input type="submit" value="Borrar">
+                </form>
+                <form action="/usedCars/details/{{_id}}" method="GET">
+                    <input type="submit" value="Detalles">
+                </form>
+            </ul>
+        {{/each}}
+    </section>
+</main>

@@ -1,0 +1,34 @@
+{{>organisms/nav/navSales}}
+<h1>Ficha técnica del vehículo</h1>
+
+<section>
+
+    {{>atoms/thumbnails/thumbnail_detail}}
+
+    <article>
+
+
+         {{>atoms/details/year}}
+         {{>atoms/details/price}}
+         {{>atoms/details/transmission}}  {{!--hemos añadido transmisión y combustible que estan en vista lista pero no en detail. --}}
+         {{>atoms/details/fuel}}
+         {{>atoms/details/seatNumber}}
+         {{>atoms/details/doorNumber}}
+         {{>atoms/details/trunkSize}}
+         {{>atoms/details/airConditioner}}
+         {{>atoms/details/motor}}
+         {{>atoms/details/availability}}
+         
+
+      <p>Stock: {{this.stock}}</p>   {{!-- No hemos hecho atom porque se había hablado de no mostrar sino utilizarlo unicamente para operaciones --}}
+
+        <a href="/newCars/buyCar/{{this._id}}">Comprar</a>
+
+    </article>
+
+    {{>atoms/buttons/button_delete}}
+    {{>atoms/buttons/button_edit}}
+
+</section>
+
+

@@ -1,0 +1,12 @@
+<form action="/newCars/updateCar/{{this._id}}" method="POST">
+    <fieldset>
+
+        {{#each arrayInputList}}
+            {{>atoms/forms/input}}
+        {{/each}}
+
+          <input type="submit" value="Enviar">
+       
+
+    </fieldset>
+</form>
