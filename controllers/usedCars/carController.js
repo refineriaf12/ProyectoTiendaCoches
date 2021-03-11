@@ -1,6 +1,7 @@
 'use strict';
 const input = require("../../data/input.json");
 const Car = require('../../models/usedCars');
+const {arrayAd} =  require('../../public/js/UsedCars/slide_used_cars');
 
 const carController = {};
 
@@ -20,8 +21,8 @@ carController.createUsedCar = async (req, res) =>{
 carController.list = async (req,res)=>{
 
     const cars = await Car.find({}).lean();
-    console.log(cars);
-    res.render('templates/usedCars/car_list',{carList:cars});
+    const sliderCars = await arrayAd();
+    res.render('templates/usedCars/car_list',{carList:cars, sliderCars});
 };
 
 carController.deleteCar = async (req,res) => { 
@@ -30,7 +31,7 @@ carController.deleteCar = async (req,res) => {
 };
 
 carController.details = async (req, res) =>{
-    const car = await Car.findById(req.params.id);
+    const car = await Car.findById(req.params.id).lean();
     res.render('templates/usedCars/car_detail',{car})
 };
 

@@ -6,7 +6,7 @@
   const passport = require('passport')
   const port = 8000;
 
-
+// Acceso jaime
   
   require('./database');
   require('./config/passport');
@@ -37,6 +37,7 @@
   app.use(require('./routes/user/userRouter'));
   //rutas used cars
   app.use('/usedCars', require('./routes/usedCars/carRouter'));
+  app.use('/membership', require('./routes/usedCars/membershipRouter'))
   //qa
   app.use(require('./routes/quality/questionRouter'));
   app.use(require('./routes/quality/emailRouter'));

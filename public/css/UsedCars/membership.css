@@ -1,0 +1,31 @@
+.membership_list{
+    display: flex;
+    gap: 1rem;
+    padding:10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px;
+}
+
+    .membership_list article{
+        padding:10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        border: solid 1px;
+        background: linear-gradient(to right, rgb(155, 155, 199),white);
+    }
+
+    .membership_list div{
+        padding: 3px;
+        display: flex;
+        gap:1rem;
+       
+    }
+
+    .membership_list a{
+        border: 1px solid rgb(111, 111, 228);
+        padding: 3px;
+    }

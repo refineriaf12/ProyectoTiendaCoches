@@ -1,0 +1,92 @@
+
+[
+    {
+    "carBrand": "MARCA",
+    "carModel": "FERRARI",
+    "modelYear": "2010",
+    "nextItvDate": "1/1/2021",
+    "sellingPrice": "3000",
+    "carImage": "https://periodismodelmotor.com/wp-content/uploads/2020/07/coche-mas-kilometros-mundo-1-1280x720.jpg",
+    "carColor": "rojo",
+    "seatsNumber": "5",
+    "doorNumber": "2",
+    "transmissionType": "manual",
+    "motorType": "diesel",
+    "__v": 0
+},
+
+{
+    "carBrand": "MARCA",
+    "carModel": "Opel",
+    "modelYear": "2010",
+    "nextItvDate": "2/4/2025",
+    "sellingPrice": "7000",
+    "carImage": "https://images1.autocasion.com/unsafe/900x600/actualidad/wp-content/uploads/2016/07/q7_aper.jpg",
+    "carColor": "rojo",
+    "seatsNumber": "5",
+    "doorNumber": "2",
+    "transmissionType": "manual",
+    "motorType": "diesel",
+    "__v": 0
+},
+
+{
+    "carBrand": "MARCA",
+    "carModel": "Opel",
+    "modelYear": "2010",
+    "nextItvDate": "2/4/2025",
+    "sellingPrice": "7000",
+    "carImage": "https://www.coches.com/fotos_historicas/opel/Corsa/high_6d17b2ab0ba53eacd601e6a2d1ffbd89.jpg",
+    "carColor": "rojo",
+    "seatsNumber": "5",
+    "doorNumber": "2",
+    "transmissionType": "manual",
+    "motorType": "diesel",
+    "__v": 0
+},
+
+{
+    "carBrand": "MARCA",
+    "carModel": "Opel",
+    "modelYear": "2010",
+    "nextItvDate": "2/4/2025",
+    "sellingPrice": "7000",
+    "carImage": "https://fotos02.autofacil.es/2019/05/16/690x278/volkswagentiguan201615-15g.jpg",
+    "carColor": "rojo",
+    "seatsNumber": "5",
+    "doorNumber": "2",
+    "transmissionType": "manual",
+    "motorType": "diesel",
+    "__v": 0
+},
+
+{
+    "carBrand": "MARCA",
+    "carModel": "Opel",
+    "modelYear": "2010",
+    "nextItvDate": "2/4/2025",
+    "sellingPrice": "7000",
+    "carImage": "https://motor.elpais.com/wp-content/uploads/2018/12/Bugatti-Chiron-2017-1600-1c-1800x728.jpg",
+    "carColor": "rojo",
+    "seatsNumber": "5",
+    "doorNumber": "2",
+    "transmissionType": "manual",
+    "motorType": "diesel",
+    "__v": 0
+},
+
+{
+    "carBrand": "MARCA",
+    "carModel": "Opel",
+    "modelYear": "2010",
+    "nextItvDate": "2/4/2025",
+    "sellingPrice": "7000",
+    "carImage": "https://neomotor.sport.es/media/2019/11/coche-blanco-1.jpg",
+    "carColor": "rojo",
+    "seatsNumber": "5",
+    "doorNumber": "2",
+    "transmissionType": "manual",
+    "motorType": "diesel",
+    "__v": 0
+}
+]

@@ -1,0 +1,18 @@
+<h1>Membership form</h1>
+
+{{#if user}}
+<form class="usedCars-membershipForm" action="/membership/save/{{user._id}}" method="POST">
+    <fieldset>
+        <legend>Usuario</legend>
+        <h3> Username: {{user.name}}</h3>
+        <h3>MembershipType: {{user.membership}}</h3>
+    </fieldset>
+    <select name="membershipType" id="membershipType">
+        <option value="Gold">Gold</option>
+        <option value="Silver">Silver</option>
+        <option value="Bronze">Bronze</option>
+    </select>
+
+    <button>Crear</button>
+</form>
+{{/if}}

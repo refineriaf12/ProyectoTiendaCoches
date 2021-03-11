@@ -1,2 +1,25 @@
+{{#if car}}
+<article class="usedCars_detail-cars_article">
+    <figure class="usedCars_detail-cars_figure"><img src="{{car.carImage}}" alt=""></figure>
+    <ul>
+        <li>Marca: {{car.carBrand}}</li>
+        <li>Modelo: {{car.carModel}}</li>
+        <li>Año: {{car.modelYear}}</li>
+        <li>Precio de Venta: {{car.sellingPrice}}</li>
+        <li>Motor: {{car.motorType}}</li>
+        <form action="/usedCars/edit/{{car._id}}" method="GET">
+            <input type="submit" value="Editar">
+        </form>
+        <form action="/usedCars/delete/{{car._id}}" method="GET">
+            <input type="submit" value="Borrar">
+        </form>
+        <form action="#" method="GET">
+            <input type="submit" value="Chat">
+        </form>
+        <form action="/usedCars/usedCarCatalog" method="GET">
+            <input type="submit" value="Volver">
+        </form>
+    </ul>
+</article>
 
-<h1>Detalle coche</h1>
+{{/if}}
