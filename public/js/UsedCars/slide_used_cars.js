@@ -13,7 +13,7 @@ const findAllCars = async () => {
      return allCars
 };
 
-// imprimir(findAllCars()); 
+// imprimir(findAllCars());
 
 //Después necesitaremos generar 3 números aleatorios entre 0 y la longitud del array -1
 const carsLength = async () => {
@@ -60,4 +60,4 @@ const arrayAd = async () =>{
 };
 
 //  imprimir(arrayAd());
-module.exports = {findAllCars, carsLength,arrayAd};
+module.exports = {findAllCars, carsLength, arrayAd, generarRamdon, generoArray3Ramdon};
