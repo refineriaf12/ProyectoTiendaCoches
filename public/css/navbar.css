@@ -1,0 +1,9 @@
+.M-nav__navList{
+    display: flex;
+    align-content: center;
+}
+
+.A-navList__link, .A-navList__searchBar{
+    width:fit-content;
+    padding:0.5vw 1vw;
+}

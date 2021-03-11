@@ -1,0 +1,566 @@
+
+{
+    "formLogin":[
+        {
+            "type":"text",
+            "placeholder":"Usuario",
+            "modifier":"-borderColorBloodOrange",
+            "id":"usernameLogin",
+            "name":"usernameLogin",
+            "required":true
+        },
+        {
+            "type":"password",
+            "placeholder":"Contraseña",
+            "modifier":"-borderColorBloodOrange",
+            "id":"passwordLogin",
+            "name":"passwordLogin",
+            "required":true
+        },
+        {
+            "type":"submit",
+            "modifier":"-backgroundColorBloodOrange",
+            "value":"Login",
+            "required":false
+        }
+    ],
+    "formRegister":[
+        {
+            "type":"text",
+            "placeholder":"Nombre",
+            "modifier":"-borderColorBloodOrange",
+            "id":"nameRegister",
+            "name":"nameRegister",
+            "value":"",
+            "required":true
+        },
+        {
+            "type":"text",
+            "placeholder":"Apellido",
+            "modifier":"-borderColorBloodOrange",
+            "id":"surnameRegister",
+            "name":"surnameRegister",
+            "value":"",
+            "required":true
+        },
+        {
+            "type":"text",
+            "placeholder":"numero de DNI",
+            "modifier":"-borderColorBloodOrange",
+            "id":"dniRegister",
+            "name":"dniRegister",
+            "value":"",
+            "required":true
+        },
+        {
+            "type":"text",
+            "placeholder":"Usuario",
+            "modifier":"-borderColorBloodOrange",
+            "id":"usernameRegister",
+            "name":"usernameRegister",
+            "value":"",
+            "required":true
+        },
+        {
+            "type":"password",
+            "placeholder":"Contraseña",
+            "modifier":"-borderColorBloodOrange",
+            "id":"passwordRegister",
+            "name":"passwordRegister",
+            "value":"",
+            "required":true
+        },
+        {
+            "type":"email",
+            "placeholder":"Email",
+            "modifier":"-borderColorBloodOrange",
+            "id":"emailRegister",
+            "name":"emailRegister",
+            "value":"",
+            "required":true
+        },
+        {
+            "type":"url",
+            "placeholder":"Avatar",
+            "modifier":"-borderColorBloodOrange",
+            "id":"avatarRegister",
+            "name":"avatarRegister",
+            "value":"",
+            "required":false
+        },
+        {
+            "type":"submit",
+            "modifier":"-backgroundColorBloodOrange",
+            "value":"Registro",
+            "required":false
+        }
+    ],
+    "formNewUsedCars":[
+        {
+            "type": "text",
+            "placeholder":"Marca",
+            "modifier":"",
+            "id":"carBrand",
+            "name":"carBrand",
+            "value":"",
+            "required":false
+        },
+
+        {
+            "type": "text",
+            "placeholder":"Modelo",
+            "modifier":"",
+            "id":"carModel",
+            "name":"carModel",
+            "value":"",
+            "required":true
+        },
+
+        {
+            "type": "number",
+            "placeholder":"Año modelo",
+            "modifier":"",
+            "id":"modelYear",
+            "name":"modelYear",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "date",
+            "placeholder":"fecha ITV",
+            "modifier":"",
+            "id":"nextItvDate",
+            "name":"nextItvDate",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "number",
+            "placeholder":"Precio de venta",
+            "modifier":"",
+            "id":"sellingPrice",
+            "name":"sellingPrice",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "text",
+            "placeholder":"Ruta imagen",
+            "modifier":"",
+            "id":"carImage",
+            "name":"carImage",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "text",
+            "placeholder":"Color coche",
+            "modifier":"",
+            "id":"carColor",
+            "name":"carColor",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "number",
+            "placeholder":"Número asientos",
+            "modifier":"",
+            "id":"seatsNumber",
+            "name":"seatsNumber",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "text",
+            "placeholder":"Trasmisión",
+            "modifier":"",
+            "id":"transmissionType",
+            "name":"transmissionType",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "text",
+            "placeholder":"Tipo de motor",
+            "modifier":"",
+            "id":"motorType",
+            "name":"motorType",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "submit",
+            "value":"Crear Anuncio"
+        }
+
+    ],
+    "formEditUsedCars":[
+        {
+            "type": "text",
+            "placeholder":"Marca",
+            "modifier":"",
+            "id":"carBrand",
+            "name":"carBrand",
+            "value":"",
+            "required":true
+        },
+
+        {
+            "type": "text",
+            "placeholder":"Modelo",
+            "modifier":"",
+            "id":"carModel",
+            "name":"carModel",
+            "value":"",
+            "required":true
+        },
+
+        {
+            "type": "number",
+            "placeholder":"Año modelo",
+            "modifier":"",
+            "id":"modelYear",
+            "name":"modelYear",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "date",
+            "placeholder":"fecha ITV",
+            "modifier":"",
+            "id":"nextItvDate",
+            "name":"nextItvDate",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "number",
+            "placeholder":"Precio de venta",
+            "modifier":"",
+            "id":"sellingPrice",
+            "name":"sellingPrice",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "text",
+            "placeholder":"Ruta imagen",
+            "modifier":"",
+            "id":"carImage",
+            "name":"carImage",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "text",
+            "placeholder":"Color coche",
+            "modifier":"",
+            "id":"carColor",
+            "name":"carColor",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "number",
+            "placeholder":"Número asientos",
+            "modifier":"",
+            "id":"seatsNumber",
+            "name":"seatsNumber",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "text",
+            "placeholder":"Trasmisión",
+            "modifier":"",
+            "id":"transmissionType",
+            "name":"transmissionType",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "text",
+            "placeholder":"Tipo de motor",
+            "modifier":"",
+            "id":"motorType",
+            "name":"motorType",
+            "value":"",
+            "required":true
+        },
+        {
+            "type": "submit",
+            "value":"Editar Anuncio"
+        }
+
+    ],
+    "formComplain" : [
+        {
+            "type":"text",
+            "placeholder":"Nombre...",
+            "modifier":"",
+            "id":"formComplain_text",
+            "name":"name",
+            "required":true
+        },
+        {
+            "type":"email",
+            "placeholder":"Email...",
+            "modifier":"",
+            "id":"formComplain_email",
+            "name":"email",
+            "required":true
+        },
+        {
+            "type":"text",
+            "placeholder":"Numero de telefono...",
+            "modifier":"",
+            "id":"formComplain_text",
+            "name":"phone",
+            "required":true
+        },
+        {
+            "type":"textarea",
+            "placeholder":"Introduzca un texto...",
+            "modifier":"",
+            "id":"formComplain_textarea",
+            "name":"message",
+            "required":true
+        },
+        {
+            "type":"submit",
+            "modifier":"",
+            "id": "formComplain_submit",
+            "value":"SEND",
+            "required":false
+        }
+    ],
+    "newCarForm":[
+		{
+			"type": "text",
+			"placeholder": "Marca",
+			"modifier":"",
+			"id": "carBrand",
+			"name": "carBrand",
+			"required": true
+		},
+		{
+			"type": "text",
+			"placeholder": "Modelo",
+			"modifier":"",
+			"id": "carModel",
+			"name": "carModel",
+			"required": true
+		},
+		{
+			"type": "number",
+			"placeholder": "Precio alquiler",
+			"modifier":"",
+			"id": "leasingPrice",
+			"name": "leasingPrice"
+		},
+		{
+			"type": "url",
+			"placeholder": "Imagen",
+			"modifier":"",
+			"id": "carImage",
+			"name": "carImage",
+			"required": true
+		},
+		{
+			"type": "number",
+			"placeholder": "Nº de asientos",
+			"modifier":"",
+			"id": "seatsNumber",
+			"name": "seatsNumber",
+			"required": true
+		},
+		{
+			"type": "number",
+			"placeholder": "Nº de puertas",
+			"modifier":"",
+			"id": "doorNumber",
+			"name": "doorNumber",
+			"required": true
+		},
+		{
+			"type": "number",
+			"placeholder": "Tamaño maletero",
+			"modifier":"",
+			"id": "trunkSize",
+			"name": "trunkSize"
+		},
+		{
+			"type": "text",
+			"placeholder": "co2 emisiones",
+			"modifier":"",
+			"id": "co2Emissions",
+			"name": "co2Emissions"
+		},
+		{
+			"type": "text",
+			"placeholder": "Tipo de coche",
+			"modifier":"",
+			"id": "carType",
+			"name": "carType"
+		},
+		{
+			"type": "text",
+			"placeholder": "Aire acondicionado",
+			"modifier":"",
+			"id": "airConditioner",
+			"name": "airConditioner"
+		},
+		{
+			"type": "text",
+			"placeholder": "Tipo de transmisión",
+			"modifier":"",
+			"id": "transmissionType",
+			"name": "transmissionType",
+			"required": "true"
+		},
+		{
+			"type": "text",
+			"placeholder": "Tipo de motor",
+			"modifier":"",
+			"id": "motorType",
+			"name": "motorType",
+			"required": "true"
+		},
+		{
+			"type": "text",
+			"placeholder": "Disponibilidad",
+			"modifier":"",
+			"id": "availability",
+			"name": "availability"
+		},
+		{
+            "type":"submit",
+            "modifier":"",
+            "value":"Enviar",
+            "required":false
+        },
+		{
+            "type":"reset",
+            "modifier":"",
+            "value":"reset",
+            "required":false
+        }
+	],
+    "updateForm": [
+        {
+          "type": "text",
+          "placeholder": "Marca",
+          "modifier": "",
+          "id": "carBrand",
+          "name": "carBrand"
+        },{
+          "type": "text",
+          "placeholder": "Modelo",
+          "modifier": "",
+          "id": "carModel",
+          "name": "carModel"
+        },{
+          "type": "number",
+          "placeholder": "Año",
+          "modifier": "",
+          "id": "modelYear",
+          "name": "modelYear"
+        },{
+          "type": "date",
+          "placeholder": "Proxima ITV",
+          "modifier": "",
+          "id": "nextItvDate",
+          "name": "nextItvDate"
+        },{
+          "type": "number",
+          "placeholder": "Precio venta",
+          "modifier": "",
+          "id": "sellingPrice",
+          "name": "sellingPrice"
+        },{
+          "type": "number",
+          "placeholder": "Precio Coste",
+          "modifier": "",
+          "id": "costPrice",
+          "name": "costPrice"
+        },{
+          "type": "url",
+          "placeholder": "Ruta imagen",
+          "modifier": "",
+          "id": "carImage",
+          "name": "carImage"
+        },{
+          "type": "text",
+          "placeholder": "Color",
+          "modifier": "",
+          "id": "carColor",
+          "name": "carColor"
+        },{
+          "type": "number",
+          "placeholder": "Num asientos",
+          "modifier": "",
+          "id": "seatsNumber",
+          "name": "seatsNumber"
+        },{
+          "type": "number",
+          "placeholder": "Num puertas",
+          "modifier": "",
+          "id": "doorNumber",
+          "name": "doorNumber"
+        },{
+          "type": "number",
+          "placeholder": "Volumen maletero",
+          "modifier": "",
+          "id": "trunkSize",
+          "name": "trunkSize"
+        },{
+          "type": "number",
+          "placeholder": "emisiones CO2",
+          "modifier": "",
+          "id": "co2Emissions",
+          "name": "co2Emissions"
+        },{
+          "type": "text",
+          "placeholder": "Tipo de coche",
+          "modifier": "",
+          "id": "carType",
+          "name": "carType"
+        },{
+          "type": "text",
+          "placeholder": "Aire acondicionado",
+          "modifier": "",
+          "id": "airConditioner",
+          "name": "airConditioner"
+        },{
+          "type": "text",
+          "placeholder": "Transmision",
+          "modifier": "",
+          "id": "transmissionType",
+          "name": "transmissionType"
+        },{
+          "type": "text",
+          "placeholder": "Tipo de motor",
+          "modifier": "",
+          "id": "motorType",
+          "name": "motorType"
+        },{
+          "type": "number",
+          "placeholder": "Stock",
+          "modifier": "",
+          "id": "stock",
+          "name": "stock"
+        },{
+          "type": "text",
+          "placeholder": "Disponibilidad",
+          "modifier": "",
+          "id": "availability",
+          "name": "availability"
+        },{
+          "type": "text",
+          "placeholder": "Operacion",
+          "modifier": "",
+          "id": "transactionType",
+          "name": "transactionType"
+        }
+      ]
+}

@@ -4,16 +4,9 @@
   "description": "Proyecto de Inicio de compra-venta de coches",
   "main": "index.js",
   "scripts": {
-    "start": "src/index.js",
-    "dev": "concurrently \"nodemon src/index.js\" \" nodemon src/chat_4_Quality/bot.js\"",
-    "test": "jest --runInBand",
-    "test:coverage": "jest --coverage"
-  },
-  "jest": {
-    "testEnvironment": "node",
-    "transform": {
-      "\\.hbs$": "jest-handlebars"
-  }
+    "start": "node index.js",
+    "dev": "concurrently \"nodemon index.js\" \" nodemon chat_4_Quality/bot.js\"",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -29,7 +22,6 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
-    "handlebars": "^4.7.6",
     "jest": "^26.6.3",
     "mocha": "^8.2.1",
     "mongoose": "^5.11.13",
@@ -37,14 +29,11 @@
     "nodemailer": "^6.4.17",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
-    "sinon": "^9.2.4",
-    "supertest": "^6.1.3",
     "telegraf": "^4.0.3"
   },
   "devDependencies": {
     "concurrently": "^5.3.0",
     "dotenv": "^8.2.0",
-    "jest-handlebars": "^1.0.1",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.7"
   }
