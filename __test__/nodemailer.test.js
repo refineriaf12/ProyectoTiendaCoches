@@ -4,8 +4,7 @@ const nodemailer = require('nodemailer');
 const emailController = require('../src/controllers_4_Quality/emailController');
 const request = require('supertest');
 const app = require('../src/server');
-const sinon = require('sinon');
-const sandbox = sinon.sandbox.create();
+
 
 
 describe('should be succesfuly conection to nodemailer',() => {
@@ -20,9 +19,6 @@ describe('should be succesfuly conection to nodemailer',() => {
                 pass: 'DeXYXeHkpEzrFzwtUa'
             }
         })
-
-        /* request(app) */
         expect(emailController).toBe(transporter);
-        sandbox.stub(nodemailer, 'createTransport').returns(transport);
     })
 });

@@ -1,52 +1,30 @@
-const { expectation } = require('sinon');
+'use strict'
+
 const request = require('supertest');
-const emailController = require('../src/controllers_4_Quality/emailController');
 const app = require('../src/server');
+const  { EmailSchema } = require('../src/models/emailModel');
+/* //Este packete serviria para generar un ID, en el caso que estemos haciendo pruebas sin BBDD
+const { nanoid } = require('nanoid'); */
 
-/* describe('GET/from to render form to send email', () => {
-    it('should response a template', done => {
-        request(app)
-            .get('/form')
-            .set('Accept')
-            .expect(done)
-    })
-}); */
+let testServer
+//El before all, es para que antes de que todo el proceso de pruebas se inicie, arranque el servidor//TAMBIEN SE PUEDE USAR EL beforeEach()
+beforeAll(() => {
+    testServer = app.listen(3000)
+})
 
-describe('POST/send-email', () => {
-    it('should response email created', done => {
-        const data = {
-            name: 'abcde',
-            email: 'abc@abc',
-            phone: 12345,
-            message: 'Message'
-        }
+//Aquí decimos que despues de que todas las pruebas se realicen, cierra el servidor
+afterAll((done) => {
+    testServer.close(done)
+})
 
-        request(app)
-            .post('/send-email')
-            .send(data)
-            .set('Accept', 'application/json')
-            /* .expect('Content-Type', /json/) */
-            .expect(200)
-            .end((err) => {
-                if (err) return done(err)
-                done()
-            })
+test('should send message and email', async () => {
+    await request(app).post('/send-email')
+    .send({
+        name: 'name',
+        email: 'email@email',
+        phone: '12345',
+        message: 'message'
     })
 
-    it('should response email created', done => {
-        const data = {}
-
-        request(app)
-            .post('/send-email')
-            .send(data)
-            .set('Accept', 'application/json')
-            /* .expect('Content-Type', /json/) */
-            .expect(200)
-            .expect('email no enviado')
-            .end((err) => {
-                if (err) return done(err)
-                done(err)
-            })
-    })
-});
-
+    .expect(200)
+})
