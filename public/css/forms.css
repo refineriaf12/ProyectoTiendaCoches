@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .O-form{
     display: flex;
     justify-content:center;
@@ -8,12 +9,18 @@
     margin-top:2vw;
 }
 
+=======
+>>>>>>> Chatworking
 .A-form_input{
     background-color: white;
     padding: 0.5vw 1vw;
     border:none;
     box-shadow: none;
+<<<<<<< HEAD
     width: 100%;
     margin:0.5vw 0
 }
 
+=======
+}
+>>>>>>> Chatworking

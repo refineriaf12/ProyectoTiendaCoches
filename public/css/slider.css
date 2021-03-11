@@ -5,7 +5,11 @@
     margin: 1vw 0;
 }
 
+<<<<<<< HEAD
 .O-slider__slidesSale, .O-slider__slidesLeasing, .O-slider__slidesUsed{
+=======
+.O-slider__slides{
+>>>>>>> Chatworking
     display: flex;
     background-color: var(--light-grey);
     overflow:hidden;
@@ -14,14 +18,22 @@
     max-width: 49vw;
 }
 
+<<<<<<< HEAD
 .M-slider__listItemSale, .M-slider__listItemLeasing, .M-slider__listItemUsed{
+=======
+.M-slider__listItem{
+>>>>>>> Chatworking
     width:15vw;
     margin: 0.5vw 0.5vw;
     background-color: white;
     min-width: 15vw;
 }
 
+<<<<<<< HEAD
 .M-slider__buttonS, .M-slider__buttonL, .M-slider__buttonU{
+=======
+.M-slider__button{
+>>>>>>> Chatworking
     background-color: var(--grey);
     border-radius: 50%;
     height: 3vw;
@@ -32,10 +44,17 @@
     cursor: pointer;
     margin: 0 1vw;
 }
+<<<<<<< HEAD
 .M-slider__buttonS:hover, .M-slider__buttonL:hover, .M-slider__buttonU:hover{
     transform: scale(1.2);
 }
 .M-slider__buttonS figure, .M-slider__buttonL figure, .M-slider__buttonU figure{
+=======
+.M-slider__button:hover{
+    transform: scale(1.2);
+}
+.M-slider__button figure{
+>>>>>>> Chatworking
     display: inline-flex;
     width: 1vw;
     height:1vw;
@@ -43,6 +62,7 @@
 }
 
 .A-listSlider__carImage{
+<<<<<<< HEAD
     width: 15vw;
     height: 10vw;
     overflow: hidden;
@@ -53,6 +73,13 @@
 .A-listSlider__carImage img{
     object-fit:fill;
     height:100%;
+=======
+    width: 100%;
+}
+.A-listSlider__carImage img{
+    width: 100%;
+    margin-bottom: 1vw;
+>>>>>>> Chatworking
 }
 
 .A-listSlider__carDescription{

@@ -1,39 +1,39 @@
 const { Schema, model } = require('mongoose');
 
 const carSchema = new Schema({
-
+    
     carBrand: {type: String,
-        required:true},
-
+        required:false},
+    
     carModel: {type: String,
-            required:true},
-
+            required:false},
+    
     modelYear: {type: String,
-            required:true},
-
+            required:false},
+    
     nextItvDate: String,
-
-    sellingPrice: Number,
-
+    
+    sellingPrice: String,
+    
     carImage: {
             type: String,
             required:false
     },
     carColor: {type: String,
             required:false},
-
+    
     seatsNumber: {type: String,
             required:false},
-
+    
     doorNumber: {type: String,
             required:false},
-
+    
     transmissionType: {type: String,
             required:false},
-
+    
     motorType: {type: String,
             required:false}
-
+    
 });
 
 module.exports = model("UsedCar", carSchema, "usedCars");
