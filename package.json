@@ -29,6 +29,7 @@
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "telegraf": "^4.0.3"
+  },
   "devDependencies": {
     "@shelf/jest-mongodb": "^1.2.3",
     "concurrently": "^5.3.0",
