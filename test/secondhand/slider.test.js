@@ -39,7 +39,7 @@ describe('Test de funciones necesarias para el slider', () => {
     });
 
     it('la función generar random debe devolver un número entre 0 y 2', async () => {
-        expect((await generarRamdon()).toString()).toMatch(/[0-2]/);
+        expect((await generarRamdon()).toString()).toMatch(regexRandom);
     });
 
     it('la función generoArray3Random debe devolver un array con tres números entre 0 y 3', async () => {
@@ -49,6 +49,7 @@ describe('Test de funciones necesarias para el slider', () => {
         expect((await generoArray3Ramdon())[2]).not.toBeNaN();
 
         expect((await generoArray3Ramdon()).length).toBe(3);
+
         expect(((await generoArray3Ramdon())[0]).toString()).toMatch(regexRandom);
         expect(((await generoArray3Ramdon())[1]).toString()).toMatch(regexRandom);
         expect(((await generoArray3Ramdon())[2]).toString()).toMatch(regexRandom);
