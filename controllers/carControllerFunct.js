@@ -22,4 +22,8 @@ function carDelete(id){
     return Car.findByIdAndDelete(id);
 }
 
-module.exports = {createCar, getSingleCar, getAllCars, carUpdate, carDelete};
+function carSearch(text){
+    return Car.find(text).lean();
+}
+
+module.exports = {createCar, getSingleCar, getAllCars, carUpdate, carDelete, carSearch};

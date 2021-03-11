@@ -12,7 +12,8 @@
         "airConditioner": "yes",
         "transmissionType": "Manual",
         "motorType": "Diesel",
-        "availability": "yes"
+        "availability": "yes",
+        "place": "Madrid"
     },
     {
         "carBrand": "Citroen",
@@ -27,7 +28,8 @@
         "airConditioner": "yes",
         "transmissionType": "Automático",
         "motorType": "Gasolina",
-        "availability": "yes"
+        "availability": "yes",
+        "place": "Barcelona"
     },
     {
         "carBrand": "Peugeot",
@@ -42,7 +44,8 @@
         "airConditioner": "Si",
         "transmissionType": "Automático",
         "motorType": "Gasolina",
-        "availability": "si"
+        "availability": "yes",
+        "place": "Asturias"
     },
     {
         "carBrand":"Renault",
@@ -57,6 +60,7 @@
         "airConditioner":"Si",
         "transmissionType":"Manual",
         "motorType": "Gasolina",
-        "availability": "si"
+        "availability": "yes",
+        "place": "Galicia"
     }
 ]

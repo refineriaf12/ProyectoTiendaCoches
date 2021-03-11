@@ -1,14 +1,10 @@
+<form action="/rentalcars/search" method="POST">
+<input type="search" name= "searchCars">
+<input type="submit" value="Buscar">
+</form>
+
 <section>
-    
-        {{#each cars}}
-            <ul>
-                <a href="/rentalCars/detail/{{_id}}">
-                    <li><img src="{{carImage}}" alt="Car image"></li>
-                    <li>Marca: {{carBrand}}</li>
-                    <li>Modelo: {{carModel}}</li>
-                    <li>Tipo: {{carType}}</li>
-                </a>
-            </ul>
-        {{/each}}
-  
+     
+    {{>organisms/eachCars/eachCar}}
+
 </section>

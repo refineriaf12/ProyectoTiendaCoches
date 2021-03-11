@@ -1,6 +1,6 @@
 'use strict'
 
-const {createCar, getSingleCar, getAllCars, carUpdate, carDelete} = require('./carControllerFunct');
+const {createCar, getSingleCar, getAllCars, carUpdate, carDelete, carSearch} = require('./carControllerFunct');
 const Car = require('../models/Car');
 const input = require('../data/input.json');
 
@@ -39,5 +39,13 @@ CarController.deleteCar =  (req,res) => {
      .catch(err => {res.send(`Error al eliminar: ${err}`)});
 };
 
+CarController.searchCar = async(req,res) =>{
+    const searchResult = await carSearch({$text: {$search: req.body.searchCars, $caseSensitive: false}});
+    res.render('cars/allCars', {cars:searchResult});
+}
+
+CarController.renderDateForm = async (req, res) => {
+    res.render('cars/DateForm', await getSingleCar(req.params.id))
+};
 
 module.exports = CarController;

@@ -99,6 +99,13 @@
 			"name": "availability"
 		},
 		{
+			"type": "text",
+			"placeholder": "Lugar",
+			"modifier":"",
+			"id": "place",
+			"name": "place"
+		},
+		{
             "type":"submit",
             "modifier":"",
             "value":"Enviar",

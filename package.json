@@ -1,27 +1,37 @@
 {
-  "name": "ProyectoTiendaCoches",
+  "name": "alquiler-vehiculos",
   "version": "1.0.0",
-  "description": "Proyecto de Inicio de compra-venta de coches",
+  "description": "Crear la sección de alquiler de una Web",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "test": "cross-env NODE_ENV=test jest",
+    "test:watch": "jest --watchAll",
+    "dev": "cross-env NODE_ENV=development nodemon index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/refineriaf12/ProyectoTiendaCoches.git"
+    "url": "git+https://github.com/zeki14/alquiler-vehiculos.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "effectiveX",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/refineriaf12/ProyectoTiendaCoches/issues"
+    "url": "https://github.com/zeki14/alquiler-vehiculos/issues"
   },
-  "homepage": "https://github.com/refineriaf12/ProyectoTiendaCoches#readme",
+  "homepage": "https://github.com/zeki14/alquiler-vehiculos#readme",
   "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "express-handlebars": "^5.2.0",
-    "mongoose": "^5.11.13",
-    "morgan": "^1.10.0"
+    "express-handlebars": "^3.0.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.11.13"
+  },
+  "devDependencies": {
+    "handlebars": "^4.5.0",
+    "jest": "^26.6.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "sinon": "^9.2.4",
+    "supertest": "^6.1.3"
   }
 }

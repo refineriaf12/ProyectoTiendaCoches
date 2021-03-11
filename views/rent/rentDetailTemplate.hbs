@@ -1,0 +1,11 @@
+<section>
+
+        {{#each convertArray}}
+            <p>Marca:{{this.carBrand}}</p>
+            <p>Modelo: {{this.carModel}}</p>
+            <p>Fecha de recogida: {{this.leaseDate}}</p>
+            <p>Fecha de devolución: {{this.leaseReturnDate}}</p>
+            <p>Importe: {{this.leasingPrice}} &euro;</p>
+        {{/each}}
+
+</section>
