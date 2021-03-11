@@ -1,11 +1,15 @@
-{{>organisms/nav/navSales}}
-<h1> Venta Coches Nuevos </h1>
+{{!-- {{>organisms/nav/navSales}} --}}
+<section class="detalle-coche">
+    
+    <h1> Venta Coches Nuevos </h1>
 
-{{#if error}}<p>No se puede realizar la compra</p>{{/if}}
+    {{#if error}}<p>No se puede realizar la compra</p>{{/if}}
 
-{{#each carListArray}}
-    <a href="/newCars/carDetail/{{this._id}}">
-        <section>
+    {{#each carListArray}}
+        
+        <article  class="O-car__list">
+
+            <a href="/newCars/carDetail/{{this._id}}">
            
                 {{>atoms/thumbnails/thumbnail_list}}
                 {{>atoms/details/brand}}
@@ -14,6 +18,10 @@
                 {{>atoms/details/fuel}}
                 {{>atoms/details/price}}
 
-        </section>
-    </a>
-{{/each}}
+            </a>
+
+        </article>
+
+    {{/each}}
+
+</section>

@@ -12,7 +12,7 @@ const userSchema = new Schema({
         required:true
     },
     dniNumber: {
-        type:Number,
+        type:String,
         required:true
     },
     userName: {
@@ -28,7 +28,10 @@ const userSchema = new Schema({
         required:true
     },
     avatar: String,
-    membership: String,
+    membership: {
+        type: String,
+        default: "Gratis"
+    },
     membershipExpirationDate: Date,
     leasedCars:{
         type:[Schema.Types.ObjectId]

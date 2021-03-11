@@ -1,7 +1,14 @@
-<form action="" method="POST" class="M-form">
+<form action="/login" method="POST" class="M-form">
+    {{#if userNameInvalid}}
+        <p>Usuario incorrecto</p>
+    {{/if}}
+    {{#if passwordInvalid}}
+        <p>Contraseña incorrecta</p>
+    {{/if}}
     {{#each atomList}}
         {{>atoms/forms/input}}
     {{/each}}
+    <a href="/register">¿No tienes cuenta aún?</a>
 </form>
 
 

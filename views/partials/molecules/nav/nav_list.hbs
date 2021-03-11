@@ -5,6 +5,11 @@
     {{>atoms/nav/nav_leasing}}
     {{>atoms/nav/nav_usedCars}}
     {{>atoms/nav/nav_searchBar}}
-    {{>atoms/nav/nav_login}}
-    {{>atoms/nav/nav_register}}
+    {{#if loggedIn}}
+        {{>atoms/nav/profile}}
+        {{>atoms/nav/logout}}
+        {{else}}
+            {{>atoms/nav/nav_login}}
+            {{>atoms/nav/nav_register}}
+    {{/if}}
 </ul>

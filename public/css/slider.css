@@ -5,7 +5,7 @@
     margin: 1vw 0;
 }
 
-.O-slider__slides{
+.O-slider__slidesSale, .O-slider__slidesLeasing, .O-slider__slidesUsed{
     display: flex;
     background-color: var(--light-grey);
     overflow:hidden;
@@ -14,14 +14,14 @@
     max-width: 49vw;
 }
 
-.M-slider__listItem{
+.M-slider__listItemSale, .M-slider__listItemLeasing, .M-slider__listItemUsed{
     width:15vw;
     margin: 0.5vw 0.5vw;
     background-color: white;
     min-width: 15vw;
 }
 
-.M-slider__button{
+.M-slider__buttonS, .M-slider__buttonL, .M-slider__buttonU{
     background-color: var(--grey);
     border-radius: 50%;
     height: 3vw;
@@ -32,10 +32,10 @@
     cursor: pointer;
     margin: 0 1vw;
 }
-.M-slider__button:hover{
+.M-slider__buttonS:hover, .M-slider__buttonL:hover, .M-slider__buttonU:hover{
     transform: scale(1.2);
 }
-.M-slider__button figure{
+.M-slider__buttonS figure, .M-slider__buttonL figure, .M-slider__buttonU figure{
     display: inline-flex;
     width: 1vw;
     height:1vw;
@@ -43,11 +43,16 @@
 }
 
 .A-listSlider__carImage{
-    width: 100%;
+    width: 15vw;
+    height: 10vw;
+    overflow: hidden;
+    margin-bottom: 1vw;
+    display: inline-flex;
+    justify-content:center;
 }
 .A-listSlider__carImage img{
-    width: 100%;
-    margin-bottom: 1vw;
+    object-fit:fill;
+    height:100%;
 }
 
 .A-listSlider__carDescription{

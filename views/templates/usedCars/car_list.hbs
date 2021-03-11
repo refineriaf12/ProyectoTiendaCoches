@@ -2,10 +2,10 @@
 <h1>Catalogo Coches Usados</h1>
 
 <main class="mainUsedCars">
-    <section class="carsList">
+    <section>
         {{#each carList}}
             <figure><img src="{{carImage}}" alt=""></figure>
-            <ul>    
+            <ul class="O-car__list">    
                 <li>Marca: {{carBrand}}</li>
                 <li>Modelo: {{carModel}}</li>
                 <li>Año: {{modelYear}}</li>

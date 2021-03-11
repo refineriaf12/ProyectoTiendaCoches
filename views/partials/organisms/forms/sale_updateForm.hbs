@@ -1,11 +1,13 @@
-<form action="/newCars/updateCar/{{this._id}}" method="POST">
-    <fieldset>
+<article class="O-form">
+    <form action="/newCars/updateCar/{{this._id}}" method="POST"  class="M-form">
+        <fieldset>
 
-        {{#each arrayInputList}}
-            {{>atoms/forms/input}}
-        {{/each}}
-          <input type="submit" value="Enviar">
-       
+            {{#each arrayInputList}}
+                {{>atoms/forms/input}}
+            {{/each}}
+            <input type="submit" value="Enviar">
+        
 
-    </fieldset>
-</form>
+        </fieldset>
+    </form>
+</article>
