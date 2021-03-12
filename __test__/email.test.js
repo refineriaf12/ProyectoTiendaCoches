@@ -1,4 +1,3 @@
-const { expectation } = require('sinon');
 const request = require('supertest');
 const emailController = require('../src/controllers_4_Quality/emailController');
 const app = require('../src/server');
