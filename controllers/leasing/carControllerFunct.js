@@ -1,6 +1,6 @@
 'use strict'
 
-const Car = require('../../models/Car');
+const Car = require('../../models/car');
 
 function createCar(param){
     return new Car(param).save();

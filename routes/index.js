@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const input = require('../data/input.json')
 const {getCars}=require("../controllers/carSale/carFunctions");
-const {getAllCars}=require("../controllers/leasing/carControllerFunctions");
+const {getAllCars}=require("../controllers/leasing/carControllerFunct");
 const {listAllCars}=require("../controllers/usedCars/carControllerFunctions");
 
 
