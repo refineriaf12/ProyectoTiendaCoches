@@ -566,3 +566,10 @@
         }
       ]
 }
+			"type": "text",
+			"placeholder": "Lugar",
+		{
+			"modifier":"",
+			"name": "place"
+			"id": "place",
+		},

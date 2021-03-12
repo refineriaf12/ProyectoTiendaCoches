@@ -1,0 +1,15 @@
+<section>
+
+    <ul>
+        {{#each rents}}
+        <li>
+            <p>Marca:{{carBrand}}</p>
+            <p>Modelo: {{carModel}}</p>
+            <p>Importe: {{leasingPrice}} &euro;</p>
+            <p>Fecha de recogida: {{leaseDate}}</p>
+            <p>Fecha de devolución: {{leaseReturnDate}}</p>
+        </li>
+        {{/each}}
+    </ul>
+
+</section>

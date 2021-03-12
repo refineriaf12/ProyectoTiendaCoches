@@ -2,7 +2,11 @@
 /shelf/
 /workspace.xml
 # Datasource local storage ignored files
+<<<<<<< HEAD
 /../../../../../../../:\Users\javio\Desktop\Repos\ProyectoTiendaCoches\.idea/dataSources/
+=======
+/../../../../../../../:\Users\nench\Escritorio\Repositorios\alquiler-vehiculos\.idea/dataSources/
+>>>>>>> 3Alquiler
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/

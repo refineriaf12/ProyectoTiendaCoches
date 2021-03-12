@@ -1,5 +1,4 @@
-'use strict';
-const {Schema, model} = require('mongoose');
+const { Schema, model } = require ('mongoose');
 
 const carSchema = new Schema({
     carBrand: {
@@ -18,27 +17,24 @@ const carSchema = new Schema({
     sellingPrice: Number,
     costPrice: Number,
     leasingPrice: Number,
-    leaseDate: Date,
-    leaseReturnDate: Date, 
+    
     carImage: {
-        type: String,
-        required:true
-    },
-    carColor: {
-        type: String,
-        required:true
-    },
-    seatsNumber: {
-        type: Number,
-        required:true
-    },
-    doorNumber: {
-        type: Number,
-        required:true
-    },
+            type: String},
+            // required:true},
+            
+    seatsNumber: {type: Number,
+            required:true},
+    
+    doorNumber: {type: Number,
+            required:true},
+    
     trunkSize: Number,
+    
     co2Emissions: String,
+    
     carType: String,
+     
+    
     airConditioner: String,
     transmissionType: {
         type: String,
@@ -54,5 +50,7 @@ const carSchema = new Schema({
 });
 
 carSchema.index({carBrand:"text"});
+    place: String
 
+carSchema.index({"carType":"text", "place":"text"});
 module.exports = model('Car', carSchema, 'cars');

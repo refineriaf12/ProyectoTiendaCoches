@@ -12,7 +12,7 @@ const userSchema = new Schema({
         required:true
     },
     dniNumber: {
-        type:String,
+        type:Number,
         required:true
     },
     userName: {
@@ -28,17 +28,11 @@ const userSchema = new Schema({
         required:true
     },
     avatar: String,
-    membership: {
-        type: String,
-        default: "Gratis"
-    },
+    membership: String,
     membershipExpirationDate: Date,
     leasedCars:{
         type:[Schema.Types.ObjectId]
     },
-    administrator: Boolean
 });
 
 module.exports = model('User', userSchema, 'users');
-
-
