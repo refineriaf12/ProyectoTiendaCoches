@@ -1,0 +1,13 @@
+<h1> Ventas del año </h1>
+
+{{#each transactionYearArray}}
+    <a href="/newCars/transactionDetail/{{this._id}}">
+        <section>
+            <h2>Venta: {{this._id}}</h2>
+            <p>Fecha de venta: {{this.transactionDate}}</p>
+        </section>
+    </a>
+{{/each}}
+
+
+{{> atoms/buttons/button url="/newCars/controlPanel" content="Panel de control"}}

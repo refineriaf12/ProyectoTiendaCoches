@@ -15,17 +15,16 @@ const carController = {};
 
     };
 
-    carController.newCarCreation = (req,res) => {
+    carController.newCarCreation = async (req,res) => {
 
-        createCar(req.body).save()
+        await createCar(req.body)
         res.redirect("/newCars")
-
 
     };
 
-    carController.carDelete = (req,res) =>{
+    carController.carDelete = async (req,res) =>{
 
-        deleteCar({_id:req.params.id})
+        await deleteCar({_id:req.params.id})
         res.redirect("/newCars")
             
     };

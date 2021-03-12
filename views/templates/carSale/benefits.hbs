@@ -1,6 +1,7 @@
-{{!-- {{>organisms/nav/navSales}} --}}
-<h1>Calculo de beneficios</h1>
+<h1>Cálculo de beneficios</h1>
 
-    <p>Beneficios totales: {{ benefits }}&euro;</p>
+    <p>Beneficios mensuales: {{ benefitsMonth }}&euro;</p>
+    <p>Beneficios anuales: {{ benefitsYear }}&euro;</p>
+    <p>Beneficios totales: {{ totalBenefits }}&euro;</p>
 
-{{>atoms/buttons/button_home}}
+{{> atoms/buttons/button url="/newCars/controlPanel" content="Panel de control"}}

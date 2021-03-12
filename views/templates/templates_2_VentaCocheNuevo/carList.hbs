@@ -1,0 +1,20 @@
+{{>partials_2_VentaCocheNuevo/organisms/navBar}}
+<h1> Venta Coches Nuevos </h1>
+
+{{#each carListArray}}
+    <a href="/newCars/carDetail/{{this._id}}">
+        <section>
+           
+                {{>partials_2_VentaCocheNuevo/atoms/thumbnailsCar/thumbnailList}}
+                {{>partials_2_VentaCocheNuevo/atoms/details/brand}}
+                {{>partials_2_VentaCocheNuevo/atoms/details/model}}
+                {{>partials_2_VentaCocheNuevo/atoms/details/transmission}}
+                {{>partials_2_VentaCocheNuevo/atoms/details/combustible}}
+                {{>partials_2_VentaCocheNuevo/atoms/details/price}}
+
+        </section>
+    </a>
+{{/each}}
+
+
+

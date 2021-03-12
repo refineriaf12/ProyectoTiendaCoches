@@ -12,9 +12,10 @@ function getSingleCar(id){
 
 }
 
-function createCar(data){
+async function createCar(data){
 
-    return new Car(data);
+    const car = new Car(data)
+    return await car.save();
 
 }
 

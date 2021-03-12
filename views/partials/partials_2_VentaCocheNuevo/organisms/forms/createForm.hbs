@@ -1,0 +1,10 @@
+<form action="/newCars/carCreation" method="POST">
+    <fieldset>
+
+        {{#each arrayInputList}}
+            {{>partials_2_VentaCocheNuevo/atoms/forms/input}}
+        {{/each}}
+        <input type="submit" value="Enviar">
+        
+    </fieldset>
+</form>

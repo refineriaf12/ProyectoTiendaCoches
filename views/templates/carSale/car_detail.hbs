@@ -1,11 +1,11 @@
-{{!-- {{>organisms/nav/navSales}} --}}
+{{>organisms/nav/navSales}}
 <h1>Ficha técnica del vehículo</h1>
 
 <section>
 
     {{>atoms/thumbnails/thumbnail_detail}}
 
-    <article class="O-car__detail">
+    <article>
 
 
          {{>atoms/details/year}}
@@ -23,7 +23,6 @@
       <p>Stock: {{this.stock}}</p>   {{!-- No hemos hecho atom porque se había hablado de no mostrar sino utilizarlo unicamente para operaciones --}}
 
         <a href="/newCars/buyCar/{{this._id}}">Comprar</a>
-
 
     </article>
 
