@@ -446,6 +446,13 @@
             "modifier":"-backgroundColorBlue",
             "value":"reset",
             "required":false
+        },
+        {
+        "type": "text",
+        "placeholder": "Lugar",
+        "modifier":"",
+        "name": "place",
+        "id": "place"
         }
 	],
     "updateForm": [
@@ -566,10 +573,3 @@
         }
       ]
 }
-			"type": "text",
-			"placeholder": "Lugar",
-		{
-			"modifier":"",
-			"name": "place"
-			"id": "place",
-		},

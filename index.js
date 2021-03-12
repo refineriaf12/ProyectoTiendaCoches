@@ -1,9 +1,11 @@
   'use strict'
+  require('dotenv').config();
   const express= require('express');
   const app = express();
   const handlebars = require('express-handlebars');
   const morgan = require('morgan')
   const passport = require('passport')
+  const methodOverride = require('method-override');
   const port = 8000;
 
 // Acceso jaime
@@ -32,6 +34,7 @@
   app.use(express.json());
   app.use(passport.initialize());
   app.use(passport.session());
+  app.use(methodOverride('_method'));
 
   app.use(require("./routes/index"));
   app.use(require('./routes/user/userRouter'));
@@ -43,6 +46,7 @@
   app.use(require('./routes/quality/emailRouter'));
   //leasing
   app.use(require('./routes/leasing/carRouter'));
+  app.use(require('./routes/leasing/rentRouter'));
   //ventas
   app.use("/newCars",require ("./routes/carSale/indexRouter"));
   app.use("/newCars",require ("./routes/carSale/carRouter"));

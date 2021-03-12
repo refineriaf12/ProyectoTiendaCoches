@@ -46,11 +46,11 @@ const carSchema = new Schema({
     },
     stock: Number,
     availability: String,
-    transactionType: String
+    transactionType: String,
+    place: String
 });
 
-carSchema.index({carBrand:"text"});
-    place: String
 
+// carSchema.index({carBrand:"text"});
 carSchema.index({"carType":"text", "place":"text"});
 module.exports = model('Car', carSchema, 'cars');
