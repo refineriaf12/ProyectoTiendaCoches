@@ -2,7 +2,7 @@
 
 const { Router } = require ('express');
 const router = Router();
-const RentController = require('../controllers/rent.controller');
+const RentController = require('../../controllers/leasing/rentController');
 
 router.post("/rentalCars/leaseCar/:id", RentController.leaseCar);
 

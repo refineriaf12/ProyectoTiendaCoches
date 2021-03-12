@@ -1,7 +1,7 @@
 "use strict";
 
 const {carUpdate} = require('./carControllerFunct');
-const Rent = require("../models/Rent");
+const Rent = require("../../models/Rent");
 
 function rentUpdate(rentsList) {
   const today = new Date().toLocaleDateString();

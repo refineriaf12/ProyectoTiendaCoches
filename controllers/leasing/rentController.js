@@ -2,7 +2,7 @@
 
 const {getSingleCar, carUpdate} = require('./carControllerFunct');
 const {rentUpdate} = require('./rentControllerFunct');
-const Rent = require('../models/Rent');
+const Rent = require('../../models/Rent');
 
 const RentController = {};
 
@@ -24,13 +24,13 @@ RentController.leaseCar = async (req, res) => {
     const convertArray = [];
     convertArray.push(car)
 
-    res.render("rent/rentDetailTemplate", { convertArray });
+    res.render("templates/leasing/rent_detail", { convertArray });
 };
 
 RentController.showAllRents = async (req,res) => {
     const rentsList = await Rent.find().lean();
     rentUpdate(rentsList);
-    res.render("rent/allRents", {rents: rentsList} );
+    res.render("templates/leasing/rent_list", {rents: rentsList} );
 };
 
 module.exports = RentController;

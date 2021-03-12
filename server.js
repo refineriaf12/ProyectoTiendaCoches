@@ -15,9 +15,8 @@ app.use(express.json());
 app.use(morgan('dev'));
 app.use(methodOverride('_method'));
 
-app.use(require('./routes/user.route'));
-app.use(require('./routes/Car.routes'));
-app.use(require('./routes/Rent.routes'));
+app.use(require('./routes/leasing/carRouter'));
+app.use(require('./routes/leasing/rentRouter'));
 
 app.set('view engine', 'hbs');
 
