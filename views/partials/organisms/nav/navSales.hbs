@@ -1,11 +1,14 @@
 <ul>
 
-    <li><a href="/">HOME</a></li>
+    <li> {{>atoms/buttons/button url="/" content="HOME"}}
 
-    <li><a href="/newCars">LISTADO DE COCHES</a></li>
 
-    <li><a href="/newCars/controlPanel">PANEL DE CONTROL DE ADMIN</a></li>
+    <li> {{>atoms/buttons/button url="/newCars" content="LISTADO DE COCHES"}}</li>
+
+   
+    <li> {{>atoms/buttons/button url="/newCars/controlPanel" content="PANEL DE CONTROL DE ADMIN"}}</li>
 
     {{>molecules/searchBar/searchBar}}
 
 </ul>
+
