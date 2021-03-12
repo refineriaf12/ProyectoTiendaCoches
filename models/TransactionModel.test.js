@@ -72,7 +72,6 @@ describe('Transaction model',()=>{
         done();
     })
 
-    
 
 })
 
